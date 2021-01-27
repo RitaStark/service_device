@@ -21,7 +21,7 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -39,7 +39,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/images/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
@@ -48,29 +48,29 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+gulp.task("images", function () {
+  return gulp.src("source/images/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.jpegtran({ progressive: true }),
       imagemin.svgo()
     ]))
 
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("source/images"));
 
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+  return gulp.src("source/images/**/*.{png,jpg}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("source/images"));
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/{icon-*,htmlacademy*}.svg")
-    .pipe(svgstore({inlineSvg: true}))
+  return gulp.src("source/images/{icon-*,htmlacademy*}.svg")
+    .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite_auto.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/images"));
 });
 
 gulp.task("html", function () {
@@ -84,13 +84,13 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/images/**",
     "source/js/**",
     "source//*.ico"
-    ], {
-      base: "source"
-    })
-  .pipe(gulp.dest("build"));
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function () {
