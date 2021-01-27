@@ -1,0 +1,140 @@
+.page-header {
+    background-color: #1b2d37;
+    padding-bottom: 100px;
+
+    padding-top: 33px;
+    &__wrapper {
+        width: 1411px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: row;
+    }
+    &__logo-details {
+        text-decoration: none;
+        color: red;
+    }
+}
+
+.main-nav {
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        align-items: center;
+    }
+    &__email {
+        margin-right: 122px;
+        color: #ffffff;
+        position: relative;
+
+        @include nav-font-style;
+        &::before {
+            content: "";
+            background: url("../images/icon-mail.png");
+            background-position: center;
+            background-size: 18px 18px;
+            position: absolute;
+            width: 14.7px;
+            height: 10px;
+            left: -40px;
+            background-color: red;
+        }
+    }
+    &__tel {
+        position: relative;
+        margin-right: 38px;
+        color: #ffffff;
+
+        @include nav-font-style;
+        &::before {
+            content: "";
+            background: url("../images/icon-phone-call.png");
+            background-position: center;
+            background-size: 18px 18px;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: -30px;
+            background-color: red;
+        }
+    }
+
+    &__call {
+        color: #ffffff;
+        background: none;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        text-transform: uppercase;
+        padding: 14px 13px;
+        font-size: 14px;
+        line-height: 16.41px;
+        font-weight: 700;
+        text-align: center;
+        font-family: "Roboto Condensed", "Arial", sans-serif;
+    }
+}
+
+.details {
+    display: flex;
+    &__block {
+        margin-left: 16px;
+    }
+    &__name {
+        color: #ffffff;
+        font-family: "Roboto Condensed", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29.3px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__tag {
+        color: #e5e5e5;
+        font-family: "Roboto Condensed", "Arial", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14.06px;
+        margin-top: 0;
+    }
+}
+
+.intro {
+    width: 1411px;
+    margin: 0 auto;
+    &__header {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Roboto Condensed", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 93.75px;
+    }
+    &__text {
+        font-family: "PT Mono", monospace;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 34.5px;
+        color: #ffffff;
+        padding-left: 215px;
+        margin-bottom: 37px;
+    }
+    &__button {
+        text-transform: uppercase;
+        font-family: "Roboto Condensed", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18.75px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #00b2ff;
+        text-decoration: none;
+        padding: 17px 28px;
+        border-radius: 5px;
+        margin-left: 215px;
+    }
+}
