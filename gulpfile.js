@@ -70,7 +70,7 @@ gulp.task("sprite", function () {
   return gulp.src("source/images/{icon-*,htmlacademy*}.svg")
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite_auto.svg"))
-    .pipe(gulp.dest("build/images"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {

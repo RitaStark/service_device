@@ -11,6 +11,7 @@
 
 <body>
 
+
   <header class="page-header">
 
     <div class="page-header__wrapper">
@@ -26,33 +27,64 @@
 
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__email">info@sd.ru</li>
-          <li class="main-nav__tel">+7 (495) 000 52 52</li>
-          <li><button class="main-nav__call">
+          <li class="main-nav__email"><span class="main-nav__email-none">info@sd.ru</span></li>
+          <li class="main-nav__tel"><span class="main-nav__tel-none">+7 (495) 000 52 52</span></li>
+          <li class="main-nav__call-order"><a href="#question" class="main-nav__call">
               заказать звонок
-            </button></li>
+            </a></li>
         </ul>
       </nav>
     </div>
 
     <div class="intro">
-      <div class="intro__info">
-        <h1 class="intro__header">печатные платы</h1>
-        <p class="intro__text">производство и монтаж, поставка комплектующих, <br>блоков и модулей</p>
-        <a href="#" class="intro__button">получить бесплатную консультацию</a>
+      <div class="intro__wrapper">
+        <div class="intro__info">
+          <h1 class="intro__header">печатные платы</h1>
+          <div class="intro__block">
+            <p class="intro__text">производство и монтаж, поставка комплектующих, <br>блоков и модулей</p>
+            <div><a href="#" class="intro__button">получить бесплатную консультацию</a></div>
+            <a href="#scroll-advantages">
+              <div class="intro__scroll-down">
+                Скролл вниз
+              </div>
+          </a></div>
 
-      </div>
-      <a>Скролл вниз</a>
+        </div>
 
-      <div class="intro__picture">
+        <div class="intro__form visually-hidden">place for pop-up</div>
+
+
+        <div class="intro__picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="images/scheme_desktop.webp 1x, images/scheme_desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 769px)" srcset="images/scheme_tablet@1x.webp 1x, images/scheme_tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="images/scheme_mobile@1x.webp 1x, images/scheme_mobile@2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="images/scheme_desktop.png, images/scheme_desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="images/scheme_tablet@1x.png, images/scheme_tablet@2x.png 2x">
+            <img src="images/scheme_mobile@1x.png" srcset="images/scheme_mobile@2x.png" alt="Фото платы">
+          </picture>
+        </div>
+
+
       </div>
     </div>
 
-
-
   </header>
+  <main>
+    <section style="height: 500px;"></section>
+    <section id="scroll-advantages" style="height: 500px;" class="advantages">
+      gggggg
+    </section>
+    <section class="about-company"></section>
+    <section class="services"></section>
+    <section id="question" class="question-form"></section>
+  </main>
 
+  <footer>
+
+  </footer>
 
 </body>
+
 
 </html>

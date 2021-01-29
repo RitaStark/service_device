@@ -1,10 +1,15 @@
 .page-header {
     background-color: #1b2d37;
     padding-bottom: 100px;
-
     padding-top: 33px;
+    background-image: url("../images/header-font_desktop.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     &__wrapper {
-        width: 1411px;
+        max-width: 1495px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -16,11 +21,11 @@
     }
     &__logo-details {
         text-decoration: none;
-        color: red;
     }
 }
 
 .main-nav {
+    margin-right: 80px;
     &__list {
         display: flex;
         justify-content: flex-end;
@@ -28,7 +33,7 @@
         align-items: center;
     }
     &__email {
-        margin-right: 122px;
+        margin-right: 4rem;
         color: #ffffff;
         position: relative;
 
@@ -38,29 +43,30 @@
             background: url("../images/icon-mail.png");
             background-position: center;
             background-size: 18px 18px;
+            background-repeat: no-repeat;
             position: absolute;
-            width: 14.7px;
-            height: 10px;
+            width: 19px;
+            height: 14px;
             left: -40px;
-            background-color: red;
         }
     }
     &__tel {
         position: relative;
-        margin-right: 38px;
+        margin-right: 1rem;
         color: #ffffff;
+        min-width: 160px;
 
         @include nav-font-style;
         &::before {
             content: "";
             background: url("../images/icon-phone-call.png");
             background-position: center;
+            background-repeat: no-repeat;
             background-size: 18px 18px;
             position: absolute;
             width: 18px;
             height: 18px;
             left: -30px;
-            background-color: red;
         }
     }
 
@@ -70,12 +76,16 @@
         border: 1px solid #ffffff;
         border-radius: 5px;
         text-transform: uppercase;
+        text-decoration: none;
         padding: 14px 13px;
         font-size: 14px;
         line-height: 16.41px;
         font-weight: 700;
         text-align: center;
         font-family: "Roboto Condensed", "Arial", sans-serif;
+    }
+    &__call-order {
+        min-width: 170px;
     }
 }
 
@@ -104,25 +114,61 @@
 }
 
 .intro {
-    width: 1411px;
+    max-width: 1495px;
     margin: 0 auto;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        background-image: url("../images/triangle.svg"), url("../images/triangle.svg");
+        background-position: 766px 88px, 747px 311px;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 467px 590px, 274px 345px;
+        // приделать бэкграунды в другое место
+    }
+    &__picture {
+        position: relative;
+        margin-top: 80px;
+    }
     &__header {
         text-transform: uppercase;
         color: #ffffff;
         font-family: "Roboto Condensed", "Arial", sans-serif;
         font-weight: 700;
-        font-size: 80px;
-        line-height: 93.75px;
+        font-size: 73px;
+        line-height: 94px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        font-style: normal;
+        transform-origin: 0 0;
+        transform: scale(0.9, 1);
+    }
+    &__block {
+        padding-left: 100px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 66px;
+            height: 2px;
+            background-color: #ffffff;
+            left: 0;
+            top: 17px;
+        }
     }
     &__text {
         font-family: "PT Mono", monospace;
         font-weight: 400;
         font-size: 22px;
-        line-height: 34.5px;
+        line-height: 34px;
+        font-style: normal;
+        letter-spacing: 0.07em;
+        text-align: left;
         color: #ffffff;
-        padding-left: 215px;
-        margin-bottom: 37px;
+        margin-bottom: 53px;
     }
+
     &__button {
         text-transform: uppercase;
         font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -135,6 +181,14 @@
         text-decoration: none;
         padding: 17px 28px;
         border-radius: 5px;
-        margin-left: 215px;
+    }
+    &__scroll-down {
+        position: absolute;
+        left: -35px;
+        top: 261px;
+        color: #ffffff;
+        text-decoration: none;
+        width: 90px;
+        transform: rotate(-90deg);
     }
 }
