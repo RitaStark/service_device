@@ -6,7 +6,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 
     &__wrapper {
         max-width: 1495px;
@@ -36,15 +35,21 @@
         margin-right: 4rem;
         color: #ffffff;
         position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17.92px;
 
-        @include nav-font-style;
+        @include font-ptmono;
     }
     &__tel {
         margin-right: 1rem;
         color: #ffffff;
         min-width: 160px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17.92px;
 
-        @include nav-font-style;
+        @include font-ptmono;
     }
 
     &__call {
@@ -92,12 +97,13 @@
 
 .intro {
     max-width: 1495px;
-    margin: 0 1rem;
+    margin: 0 auto;
+    min-height: 878px;
 
     &__wrapper {
         display: flex;
         align-items: center;
-
+        margin-top: 173px;
         position: relative;
     }
     &__picture {
@@ -186,7 +192,7 @@
     &__scroll-down {
         position: absolute;
         left: -35px;
-        top: 261px;
+        top: 430px;
         color: #ffffff;
         text-decoration: none;
         width: 90px;
