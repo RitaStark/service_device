@@ -1,6 +1,7 @@
-@mixin nav-font-style {
+@mixin font-ptmono {
     font-family: "PT Mono", monospace;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 17.92px;
+}
+
+@mixin font-roboto {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
 }
