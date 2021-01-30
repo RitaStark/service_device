@@ -92,24 +92,42 @@
 
 .intro {
     max-width: 1495px;
-    margin: 0 auto;
+    margin: 0 1rem;
 
     &__wrapper {
         display: flex;
         align-items: center;
 
         position: relative;
-
-        padding-bottom: 50px;
-        background-image: url("../images/triangle.svg"), url("../images/triangle.svg");
-        background-position: 766px 88px, 747px 311px;
-        background-repeat: no-repeat, no-repeat;
-        background-size: 467px 590px, 274px 345px;
-        // приделать бэкграунды в другое место
     }
     &__picture {
         position: relative;
         margin-top: 80px;
+        z-index: 0;
+        &::before {
+            content: "";
+            background-image: url("../images/triangle.svg");
+            background-repeat: no-repeat;
+            background-size: 238px 261px;
+            position: absolute;
+            bottom: -77px;
+            left: -3px;
+            width: 274px;
+            height: 345px;
+            z-index: -1;
+        }
+        &::after {
+            content: "";
+            background-image: url("../images/triangle.svg");
+            background-repeat: no-repeat;
+            background-size: 406px 444px;
+            position: absolute;
+            top: 70px;
+            left: 45px;
+            width: 406px;
+            height: 444px;
+            z-index: -1;
+        }
     }
     &__header {
         text-transform: uppercase;
@@ -174,13 +192,13 @@
 
     &__advice {
         position: absolute;
-        bottom: 120px;
+        bottom: 50px;
         left: 100px;
     }
 }
 
 // tablet----------------------------------------------------------------------------
-@media (max-width: $tablet-width) {
+@media (max-width: $desktop-width) {
     .page-header {
         background-color: #1b2d37;
         background-image: url("../images/header-font_tablet.png");
@@ -231,6 +249,7 @@
         }
     }
     .intro {
+        margin: 0 auto;
         &__header {
             max-width: 720px;
             font-size: 60px;
@@ -239,10 +258,8 @@
             line-height: 70px;
             letter-spacing: 0.07em;
             text-align: left;
+
             margin-top: 126px;
-        }
-        &__wrapper {
-            margin: 0 25px;
         }
         &__text {
             font-size: 18px;
@@ -263,10 +280,23 @@
         }
         &__picture {
             margin-top: 20px;
+            overflow: hidden;
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
         }
         &__advice {
-            bottom: 25px;
-            left: 47px;
+            bottom: 0;
+            left: 72px;
+        }
+        &__info {
+            margin-left: 25px;
+        }
+        &__scroll-down {
+            display: none;
         }
     }
 }
