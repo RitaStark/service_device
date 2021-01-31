@@ -71,8 +71,6 @@
         line-height: 16px;
         letter-spacing: 0.07em;
         text-align: left;
-        transform-origin: 0 0;
-        transform: scale(0.7, 1);
 
         @include font-roboto;
     }
@@ -130,7 +128,7 @@
 .copyright-list {
     &__lifetime {
         position: absolute;
-        left: 13rem;
+        left: 10rem;
         top: 0;
     }
     &__confident {
@@ -159,8 +157,6 @@
     }
     &__header {
         text-transform: uppercase;
-        transform-origin: 0 0;
-        transform: scale(0.7, 1);
         padding-left: 10px;
         font-size: 15px;
         font-style: normal;
@@ -293,6 +289,8 @@
 
         &__header {
             font-size: 15px;
+            padding-left: 0;
+            @include font-roboto;
         }
         &__wrapper {
             display: none;
@@ -353,10 +351,14 @@
 
     .address-details {
         position: relative;
+        padding-top: 29px;
+        padding-bottom: 29px;
         &__header {
             margin-top: 0;
             padding-top: 29px;
             padding-bottom: 29px;
+            padding-left: 0;
+            @include font-roboto;
         }
         &__list {
             display: none;
@@ -392,8 +394,8 @@
         &__lifetime {
             left: 50%;
             transform: translateX(-50%);
-            top: -289px;
-            min-width: 223px;
+            top: -266px;
+            min-width: 239px;
         }
         &__confident {
             margin-bottom: 30px;
