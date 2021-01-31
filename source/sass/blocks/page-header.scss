@@ -259,6 +259,10 @@
     }
     .intro {
         margin: 0 auto;
+        &__wrapper {
+            margin-top: 0;
+            min-height: 681px;
+        }
         &__header {
             max-width: 720px;
             font-size: 60px;
@@ -318,6 +322,7 @@
 @media (max-width: $mobile-width) {
     .page-header {
         padding-top: 17px;
+        padding-bottom: 0;
         max-width: 320px;
         &__wrapper {
             margin: 0 16px;
@@ -345,6 +350,7 @@
 
     .intro {
         position: relative;
+        min-height: 647px;
         &__header {
             font-size: 40px;
             font-style: normal;
@@ -385,7 +391,6 @@
                 background-image: url("../images/triangle.svg");
                 background-repeat: no-repeat;
                 background-size: 479px 479px;
-                // background-position: center;
                 position: absolute;
                 top: 8px;
                 left: 207px;
@@ -401,6 +406,7 @@
             margin-top: 0;
         }
         &__wrapper {
+            margin-top: 62px;
             display: flex;
             flex-direction: column;
         }

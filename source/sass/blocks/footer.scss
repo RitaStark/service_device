@@ -1,5 +1,7 @@
 .footer-container {
     margin-top: 65px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .footer-wrapper,
@@ -49,8 +51,15 @@
 .footer-list {
     display: flex;
     flex-direction: column;
+    &__wrapper {
+        display: flex;
+    }
     &__block {
         display: flex;
+        flex-direction: column;
+        & input {
+            display: none;
+        }
     }
     &__header {
         text-transform: uppercase;
@@ -70,6 +79,7 @@
     &__extra {
         list-style-type: none;
         padding-left: 0;
+        margin-top: 0;
     }
 
     &__item-list {
@@ -144,6 +154,9 @@
 }
 
 .address-details {
+    & input {
+        display: none;
+    }
     &__header {
         text-transform: uppercase;
         transform-origin: 0 0;
@@ -181,12 +194,17 @@
         max-width: 720px;
     }
     .footer-list {
+        &__wrapper {
+            flex-direction: column;
+        }
         &__header {
             margin-bottom: 0;
         }
         &__block {
             flex-direction: column;
-            margin-top: 29px;
+            & input {
+                display: none;
+            }
         }
         &__item-list {
             margin-bottom: 0;
@@ -194,6 +212,9 @@
         }
         &__extra {
             margin-top: 0;
+        }
+        &__label {
+            margin-bottom: 38px;
         }
         @include margin-top-38;
     }
@@ -232,11 +253,154 @@
         }
     }
     .address-details {
+        & input {
+            display: none;
+        }
         &__header {
             margin-bottom: 0;
         }
         &__list {
-            margin-top: 29px;
+            margin-top: 38px;
+        }
+    }
+}
+
+// mobile ----------------------------------------------------------------------------
+
+@media (max-width: $mobile-width) {
+    .footer-wrapper {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        margin-top: 46px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        &__social {
+            padding-top: 81px;
+        }
+    }
+
+    .footer-list {
+        margin-right: 15px;
+        margin-left: 15px;
+
+        &__header {
+            font-size: 15px;
+        }
+        &__wrapper {
+            display: none;
+        }
+
+        &__block {
+            & input {
+                display: none;
+                &:checked ~ .footer-list__wrapper {
+                    display: block;
+                }
+                &:checked ~ .footer-list__extra {
+                    display: block;
+                }
+                &:checked + .footer-list__label::after {
+                    content: "-";
+                }
+            }
+        }
+    }
+
+    .footer-list {
+        margin-top: 0;
+        &__header {
+            margin-top: 0;
+            padding-top: 29px;
+            padding-bottom: 29px;
+        }
+
+        &__label {
+            margin-bottom: 0;
+            position: relative;
+            &::after {
+                content: "+";
+                font-size: 25px;
+                opacity: 0.5;
+                position: absolute;
+                left: 283px;
+                top: 24px;
+            }
+        }
+    }
+
+    .footer-address {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 0;
+        border-top: 1px solid rgba(98, 105, 98, 0.2);
+        &__list {
+            display: none;
+        }
+        & input {
+            &:checked ~ .address-details__list {
+                display: block;
+            }
+        }
+    }
+
+    .address-details {
+        position: relative;
+        &__header {
+            margin-top: 0;
+            padding-top: 29px;
+            padding-bottom: 29px;
+        }
+        &__list {
+            display: none;
+        }
+        & input {
+            display: none;
+
+            &:checked ~ .address-details__list {
+                display: block;
+            }
+            &:checked + .address-details__label::after {
+                content: "-";
+            }
+        }
+        &__label::after {
+            content: "+";
+            font-size: 25px;
+            opacity: 0.5;
+            position: absolute;
+            left: 283px;
+            top: 24px;
+        }
+    }
+
+    .footer-copyright {
+        &__list {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .copyright-list {
+        &__lifetime {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -289px;
+            min-width: 223px;
+        }
+        &__confident {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        &__developer {
+            padding-bottom: 30px;
         }
     }
 }
