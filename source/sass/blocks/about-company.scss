@@ -52,7 +52,7 @@
         height: 294px;
         position: absolute;
         top: 10px;
-        left: 0;
+        left: 1px;
     }
     &__year {
         transform: rotate(-90deg);
@@ -67,5 +67,29 @@
         left: -90px;
 
         @include font-roboto;
+    }
+    &__tablet-text {
+        display: none;
+    }
+}
+
+// tablet----------------------------------------------------------------------------
+@media (max-width: $desktop-width) {
+    .about-company {
+        max-width: 720px;
+        margin: 0 auto;
+        &__wrapper {
+            padding-left: 138px;
+            padding-right: 44px;
+        }
+        &__header {
+            font-size: 32px;
+        }
+        &__desktop-text {
+            display: none;
+        }
+        &__tablet-text {
+            display: inline;
+        }
     }
 }
