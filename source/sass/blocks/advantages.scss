@@ -7,6 +7,7 @@
         padding-left: 0;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 112px;
     }
     &__header {
@@ -19,8 +20,7 @@
     }
     &__item {
         font-size: 16px;
-        columns: #666666;
-        max-width: 466px;
+        max-width: 483px;
         outline: 1px solid #ebebeb;
         border-left: 1px solid #00b2ff;
 
@@ -29,6 +29,13 @@
         padding: 45px 42px 49px 44px;
 
         @include font-ptmono;
+
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+        &:nth-child(4) {
+            margin-right: 0;
+        }
 
         &:hover {
             background-color: #00b2ff;
@@ -46,4 +53,36 @@
 
 .advantages__icon {
     fill: #00b2ff;
+}
+
+// tablet----------------------------------------------------------------------------
+
+@media (max-width: $desktop-width) {
+    .advantages {
+        max-width: 720px;
+        margin: 0 auto;
+        &__item {
+            max-width: 258px;
+        }
+    }
+}
+
+// mobile ----------------------------------------------------------------------------
+
+@media (max-width: $mobile-width) {
+    .advantages {
+        max-width: 290px;
+        margin: 0 auto;
+        &__list {
+            margin-top: 37px;
+        }
+        &__item {
+            max-width: 258px;
+            margin-right: 0;
+            padding: 25px 18px 38px 23px;
+        }
+        &__header {
+            font-size: 20px;
+        }
+    }
 }
