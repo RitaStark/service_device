@@ -93,3 +93,26 @@
         }
     }
 }
+
+// mobile ----------------------------------------------------------------------------
+
+@media (max-width: $mobile-width) {
+    .about-company {
+        margin-bottom: 65px;
+        &__wrapper {
+            max-width: 320px;
+            margin: 0 15px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &__header {
+            font-size: 28px;
+        }
+        &__year {
+            display: none;
+        }
+        &__info {
+            display: none;
+        }
+    }
+}
