@@ -17,33 +17,36 @@
     &__wrapper {
         max-width: 1555px;
         margin: 0 auto;
-        padding-bottom: 207px;
+        padding-bottom: 280px;
     }
     &__picture {
-        position: relative;
+        position: absolute;
+        right: 0;
+        top: 195px;
         z-index: 0;
         &::before {
             content: "";
             background-image: url("../images/triangle.svg");
             background-repeat: no-repeat;
-            background-size: 238px 261px;
+            background-size: 322px 280px;
             position: absolute;
-            bottom: -77px;
-            left: -3px;
-            width: 274px;
-            height: 345px;
+            bottom: 20px;
+            left: -21px;
+            width: 322px;
+            height: 280px;
             z-index: -1;
         }
         &::after {
             content: "";
             background-image: url("../images/triangle.svg");
             background-repeat: no-repeat;
-            background-size: 406px 444px;
+            background-size: 549px 474px;
             position: absolute;
-            top: 70px;
+            // top: 16px;
+            bottom: 20px;
             left: 45px;
-            width: 406px;
-            height: 444px;
+            width: 549px;
+            height: 474px;
             z-index: -1;
         }
     }
@@ -61,6 +64,7 @@
     &__block {
         padding-left: 100px;
         position: relative;
+        max-width: 680px;
         &::before {
             content: "";
             position: absolute;
@@ -96,8 +100,6 @@
         text-decoration: none;
         padding: 17px 28px;
         border-radius: 5px;
-        display: block;
-        width: 100%;
     }
     &__button-mobile {
         display: none;
@@ -113,11 +115,13 @@
 
         @include font-ptmono;
     }
-
+    &__info {
+        position: relative;
+        z-index: 1;
+    }
     &__advice {
-        min-width: 379px;
         position: absolute;
-        bottom: 0;
+        bottom: -60px;
         left: 100px;
     }
 }
@@ -126,12 +130,16 @@
 @media (max-width: $desktop-width) {
     .intro {
         &__wrapper {
-            // max-width: 780px;
+            max-width: 780px;
             margin: 0 auto;
+            padding-bottom: 161px;
         }
         &__container {
             margin: 0 auto;
             padding-top: 88px;
+            padding-bottom: 25px;
+
+            overflow: hidden;
         }
         &__header {
             max-width: 720px;
@@ -156,6 +164,7 @@
             position: relative;
             padding-left: 47px;
             margin-bottom: 95px;
+
             &::before {
                 width: 33px;
                 left: 0;
@@ -163,23 +172,45 @@
             }
         }
         &__picture {
-            // margin-top: 20px;
-            overflow: hidden;
+            position: absolute;
+            right: -192px;
+            top: 140px;
+
             &::before {
-                display: none;
+                content: "";
+                background-image: url("../images/triangle.svg");
+                background-repeat: no-repeat;
+                background-size: 254px 216px;
+                position: absolute;
+                bottom: -8px;
+                left: -67px;
+                width: 254px;
+                height: 216px;
+                z-index: -1;
             }
             &::after {
-                display: none;
+                content: "";
+                background-image: url("../images/triangle.svg");
+                background-repeat: no-repeat;
+                background-size: 434px 378px;
+                position: absolute;
+                // top: 16px;
+                bottom: -8px;
+                left: -53px;
+                width: 434px;
+                height: 378px;
+                z-index: -1;
             }
         }
         &__advice {
             position: absolute;
             bottom: 0;
-            left: 47px;
+            left: 134px;
+            min-width: 379px;
         }
         &__info {
-            position: relative;
-            margin-left: 91px;
+            padding-left: 88px;
+            max-width: 393px;
         }
         &__scroll-down {
             display: none;
@@ -188,7 +219,7 @@
             display: none;
         }
         &__button {
-            width: 356px;
+            min-width: 356px;
         }
     }
 }
@@ -199,13 +230,15 @@
         margin-top: -200px;
         min-height: 647px;
         &__wrapper {
-            max-width: 320px;
-            margin: 0 auto;
+            margin-top: 62px;
             padding-bottom: 70px;
+            display: flex;
+            flex-direction: column;
         }
         &__container {
-            margin-right: 18px;
-            margin-left: 18px;
+            padding-right: 18px;
+            padding-left: 18px;
+            overflow: hidden;
         }
         &__header {
             font-size: 40px;
@@ -219,7 +252,7 @@
             margin-top: 267px;
         }
         &__info {
-            margin: 0 auto;
+            padding-left: 0;
         }
         &__text {
             font-size: 16px;
@@ -229,7 +262,7 @@
         &__picture {
             position: absolute;
             top: 169px;
-            left: -7px;
+            right: -3px;
             &::before {
                 content: "";
                 background-image: url("../images/triangle.svg");
@@ -238,8 +271,8 @@
                 position: absolute;
                 bottom: -113px;
                 left: 182px;
-                width: 150px;
-                height: 211px;
+                width: 281px;
+                height: 281px;
                 z-index: -1;
                 display: block;
             }
@@ -262,14 +295,10 @@
             height: 220px;
             margin-top: 0;
         }
-        &__wrapper {
-            margin-top: 62px;
-            display: flex;
-            flex-direction: column;
-        }
+
         &__advice {
-            position: static;
-            min-width: 0;
+            left: 0;
+            min-width: 284px;
         }
         &__button {
             display: none;
@@ -285,9 +314,9 @@
             color: #ffffff;
             background-color: #00b2ff;
             text-decoration: none;
-            padding: 17px 11px;
+            padding: 17px 0;
             border-radius: 5px;
-            // margin: 0 16px;
+            max-width: 284px;
         }
     }
 }
