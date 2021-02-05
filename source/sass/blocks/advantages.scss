@@ -6,7 +6,7 @@
         padding-left: 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         margin-top: 0;
     }
     &__header {
@@ -19,22 +19,14 @@
     }
     &__item {
         font-size: 16px;
-        max-width: 467px;
+        max-width: 483px;
         outline: 1px solid #ebebeb;
         border-left: 1px solid #00b2ff;
 
-        margin-right: 30px;
         margin-bottom: 30px;
         padding: 45px 42px 49px 44px;
 
         @include font-ptmono;
-
-        // &:nth-child(2) {
-        //     margin-right: 0;
-        // }
-        // &:nth-child(4) {
-        //     margin-right: 0;
-        // }
 
         &:hover {
             background-color: #00b2ff;
@@ -65,12 +57,10 @@
         margin: 0 auto;
         &__list {
             max-width: 719px;
-            justify-content: center;
+            justify-content: space-between;
         }
         &__item {
-            margin-right: 14px;
-            margin-left: 14px;
-            max-width: 243px;
+            max-width: 258px;
         }
     }
     .advantages-wrapper {
