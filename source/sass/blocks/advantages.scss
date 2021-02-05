@@ -1,14 +1,13 @@
 .advantages {
     max-width: 1170px;
     margin: 0 auto;
-
     &__list {
         list-style-type: none;
         padding-left: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 112px;
+        margin-top: 0;
     }
     &__header {
         font-size: 24px;
@@ -20,7 +19,7 @@
     }
     &__item {
         font-size: 16px;
-        max-width: 483px;
+        max-width: 467px;
         outline: 1px solid #ebebeb;
         border-left: 1px solid #00b2ff;
 
@@ -30,12 +29,12 @@
 
         @include font-ptmono;
 
-        &:nth-child(2) {
-            margin-right: 0;
-        }
-        &:nth-child(4) {
-            margin-right: 0;
-        }
+        // &:nth-child(2) {
+        //     margin-right: 0;
+        // }
+        // &:nth-child(4) {
+        //     margin-right: 0;
+        // }
 
         &:hover {
             background-color: #00b2ff;
@@ -54,6 +53,9 @@
 .advantages__icon {
     fill: #00b2ff;
 }
+.advantages-wrapper {
+    margin-top: 80px;
+}
 
 // tablet----------------------------------------------------------------------------
 
@@ -61,9 +63,18 @@
     .advantages {
         max-width: 720px;
         margin: 0 auto;
-        &__item {
-            max-width: 258px;
+        &__list {
+            max-width: 719px;
+            justify-content: center;
         }
+        &__item {
+            margin-right: 14px;
+            margin-left: 14px;
+            max-width: 243px;
+        }
+    }
+    .advantages-wrapper {
+        margin-top: 59px;
     }
 }
 
@@ -79,10 +90,14 @@
         &__item {
             max-width: 258px;
             margin-right: 0;
+            margin-left: 0;
             padding: 25px 18px 38px 23px;
         }
         &__header {
             font-size: 20px;
         }
+    }
+    .advantages-wrapper {
+        margin-top: 37px;
     }
 }
