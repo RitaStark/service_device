@@ -242,6 +242,14 @@
         }
     }
     &__close-icon {
+        width: 20px;
+        height: 20px;
+        background-color: #00b2ff;
+        border: none;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
         &::before {
             content: "";
             position: absolute;
@@ -250,8 +258,8 @@
             background: url("../images/icon-close.svg") no-repeat;
             background-position: center;
             background-size: 17px 17px;
-            right: 20px;
-            top: 20px;
+            right: 1px;
+            top: 1px;
         }
     }
 }
