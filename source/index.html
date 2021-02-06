@@ -69,25 +69,50 @@
             </div>
           </div>
 
-          <div class="intro__form visually-hidden">place for pop-up</div>
+        </div>
 
 
-          <div class="intro__picture">
-            <picture>
-              <source type="image/webp" media="(min-width: 1025px)"
-                srcset="images/scheme_desktop.webp 1x, images/scheme_desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1024px)"
-                srcset="images/scheme_tablet@1x.webp 1x, images/scheme_tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 320px)"
-                srcset="images/scheme_mobile@1x.webp 1x, images/scheme_mobile@2x.webp 2x">
-              <source media="(min-width: 1024px)" srcset="images/scheme_desktop.png, images/scheme_desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="images/scheme_tablet@1x.png, images/scheme_tablet@2x.png 2x">
-              <img class="intro__img" src="images/scheme_mobile@1x.webp" srcset="images/scheme_mobile@2x.png"
-                alt="Фото платы">
-            </picture>
-          </div>
+        <div class="intro__picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1025px)"
+              srcset="images/scheme_desktop.webp 1x, images/scheme_desktop@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1024px)"
+              srcset="images/scheme_tablet@1x.webp 1x, images/scheme_tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="images/scheme_mobile@1x.webp 1x, images/scheme_mobile@2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="images/scheme_desktop.png, images/scheme_desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="images/scheme_tablet@1x.png, images/scheme_tablet@2x.png 2x">
+            <img class="intro__img" src="images/scheme_mobile@1x.webp" srcset="images/scheme_mobile@2x.png"
+              alt="Фото платы">
+          </picture>
         </div>
       </div>
+
+      <div class="intro__form">
+        <div class="intro__form-wrapper pop-up">
+          <div class="pop-up__close-icon"></div>
+          <h2 class="pop-up__header">Закажите звонок</h2>
+          <p class="pop-up__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
+          <div class="pop-up__item">
+            <input class="pop-up__input" type="text" name="name" placeholder="Имя">
+          </div>
+
+          <div class="pop-up__item">
+            <input class="pop-up__input" type="number" min="1" max="10" name="phone-number" placeholder="Телефон">
+          </div>
+
+
+          <div class="pop-up__item">
+            <textarea class="pop-up__input" placeholder="Ваш вопрос"></textarea>
+          </div>
+
+          <a href="#">отправить</a>
+          <input class="pop-up__input pop-up__check-mark" id="agree" type="checkbox" name="agree">
+          <label for="agree">Я согласен на обработку <br>персональных данных</label>
+        </div>
+      </div>
+
     </section>
 
 
@@ -218,7 +243,7 @@
     <section id="question" class="question-form">
       <div class="question-form__wrapper">
         <div class="question-form__image question-form__block">
-          <img class="intro__img" src="images/paper_airplane.webp" srcset="images/paper_airplane@2x.png"
+          <img src="images/paper_airplane.webp" srcset="images/paper_airplane@2x.png"
             alt="Изображение бумажного самолетика">
         </div>
 

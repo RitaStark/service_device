@@ -126,6 +126,136 @@
     }
 }
 
+// pop-up----------------------------------------------------------------------------
+
+.intro {
+    &__form-wrapper {
+        width: 414px;
+        margin: 0 auto;
+        background-color: #00b2ff;
+        padding-left: 38px;
+        padding-right: 38px;
+        padding-top: 33px;
+        padding: 33px 38px 36px 38px;
+        display: flex;
+        flex-direction: column;
+        & input,
+        textarea {
+            display: block;
+            width: 398px;
+            background-color: #58c2f0;
+            color: #ffffff;
+            border: none;
+            &::placeholder {
+                color: #ffffff;
+            }
+        }
+        & input {
+            padding: 10px 10px;
+        }
+        & textarea {
+            padding-top: 14px;
+            padding-left: 14px;
+            padding-bottom: 67px;
+            resize: none;
+            width: 400px;
+        }
+        & a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            font-size: 14px;
+            padding: 14px 0 12px 0;
+            margin-bottom: 30px;
+            display: block;
+            width: 100%;
+            text-align: center;
+
+            @include font-roboto;
+        }
+        & label {
+            position: relative;
+            color: #ffffff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-left: 49px;
+
+            @include font-ptmono;
+        }
+    }
+}
+.pop-up {
+    position: relative;
+    &__header {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        @include font-roboto;
+    }
+    &__text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+
+        @include font-ptmono;
+    }
+    &__item {
+        margin-bottom: 30px;
+    }
+    &__check-mark {
+        &:checked + label::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: url("../images/icon-tick.svg") no-repeat;
+            background-position: center;
+            background-size: 10px 10px;
+            left: 5px;
+            top: 5px;
+        }
+        & + label::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #ffffff;
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__close-icon {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            background: url("../images/icon-close.svg") no-repeat;
+            background-position: center;
+            background-size: 17px 17px;
+            right: 20px;
+            top: 20px;
+        }
+    }
+}
+
 // tablet----------------------------------------------------------------------------
 @media (max-width: $desktop-width) {
     .intro {
