@@ -7,6 +7,7 @@
         padding-bottom: 113px;
         display: flex;
     }
+
     &__block {
         width: 50%;
     }
@@ -63,12 +64,21 @@
             }
         }
     }
-    &__item input[type="text"] {
-        width: 260px;
-        font-size: 16px;
-        color: #ffffff;
-        border: none;
-        background-color: #58c2f0;
+    &__item {
+        & input[type="text"] {
+            width: 260px;
+            font-size: 16px;
+            color: #ffffff;
+            border: none;
+            background-color: #58c2f0;
+        }
+        & input[type="number"] {
+            width: 260px;
+            font-size: 16px;
+            color: #ffffff;
+            border: none;
+            background-color: #58c2f0;
+        }
     }
 
     &__input {
@@ -142,8 +152,43 @@
             top: 0;
         }
     }
+    &__client-data {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & > div {
+            margin-bottom: 10px;
+        }
+    }
 }
 
 input[type="checkbox"] {
     display: none;
+}
+
+// tablet----------------------------------------------------------------------------
+
+@media (max-width: $desktop-width) {
+    .question-form {
+        &__wrapper {
+            max-width: 770px;
+            margin: 0 auto;
+            padding: 83px 63px 103px 63px;
+        }
+        &__image {
+            display: none;
+        }
+        &__header {
+            font-size: 32px;
+        }
+        &__agreements {
+            & label {
+                padding-right: 38px;
+            }
+            & a {
+                padding: 14px 4px 12px 69px;
+            }
+        }
+    }
 }
