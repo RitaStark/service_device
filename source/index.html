@@ -215,7 +215,48 @@
       </div>
     </section>
 
-    <section id="question" class="question-form"></section>
+    <section id="question" class="question-form">
+      <div class="question-form__wrapper">
+        <div class="question-form__image question-form__block">
+          <img class="intro__img" src="images/paper_airplane.webp" srcset="images/paper_airplane@2x.png"
+            alt="Изображение бумажного самолетика">
+        </div>
+
+        <div class="question-form__card question-form_block">
+          <h2 class="question-form__header">Остались вопросы? Задайте их нам!</h2>
+          <p class="question-form__text">Мы проконсультируем Вас бесплатно</p>
+
+          <form class="question-form__data" action="#">
+
+            <div class="question-form__item">
+              <!-- <label for="name"></label> -->
+              <input class="question-form__input" id="name" type="text" name="name" placeholder="Имя">
+            </div>
+
+            <div class="question-form__item">
+              <!-- <label for="phone-number"></label> -->
+              <input class="question-form__input" id="phone-number" type="text" name="phone-number"
+                placeholder="Телефон">
+            </div>
+
+            <div class="question-form__item question-form__ask">
+              <!-- <label for="type-question"></label> -->
+              <textarea class="question-form__input" id="type-question" placeholder="Ваш вопрос"></textarea>
+            </div>
+
+            <div class="question-form__agreements">
+              <a href="#">задать вопрос</a>
+              <!-- <p>Я согласен на обработку <br>персональных данных</p> -->
+
+              <input class="question-form__input question-form__check-mark" id="agree" type="checkbox" name="agree"
+                checked>
+              <label for="agree">Я согласен на обработку <br>персональных данных</label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
   </main>
 
   <footer>

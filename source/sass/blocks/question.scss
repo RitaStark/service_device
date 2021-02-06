@@ -1,0 +1,149 @@
+.question-form {
+    background-color: #00b2ff;
+    &__wrapper {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-top: 96px;
+        padding-bottom: 113px;
+        display: flex;
+    }
+    &__block {
+        width: 50%;
+    }
+    &__header {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 51px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 5px;
+
+        @include font-roboto;
+    }
+    &__text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @include font-ptmono;
+    }
+    &__data {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 49px;
+
+        @include font-ptmono;
+    }
+    &__ask {
+        flex-basis: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        & textarea {
+            width: 96%;
+            height: 154px;
+            font-size: 16px;
+            color: #ffffff;
+            resize: vertical;
+            padding-left: 20px;
+            padding-top: 20px;
+
+            &::placeholder {
+                padding-left: 0;
+                border: none;
+            }
+        }
+    }
+    &__item input[type="text"] {
+        width: 260px;
+        font-size: 16px;
+        color: #ffffff;
+        border: none;
+        background-color: #58c2f0;
+    }
+
+    &__input {
+        background-color: #58c2f0;
+        // opacity: 0.1;
+        height: 50px;
+
+        &::placeholder {
+            padding-left: 20px;
+            color: #ffffff;
+            font-size: 16px;
+
+            @include font-ptmono;
+        }
+    }
+    &__agreements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        color: #ffffff;
+        width: 100%;
+        & a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            padding: 14px 4px 12px 55px;
+            width: 30%;
+
+            @include font-roboto;
+        }
+        & p {
+            padding-right: 50px;
+            line-height: 16px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        & label {
+            position: relative;
+        }
+    }
+    &__image {
+        width: 100%;
+        & img {
+            width: 510px;
+            padding-top: 50%;
+            transform: translateY(-25%);
+        }
+    }
+    &__check-mark {
+        &:checked + label::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: url("../images/icon-tick.svg") no-repeat;
+            background-position: center;
+            background-size: 10px 10px;
+            left: -53px;
+            top: 05px;
+        }
+        & + label::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #ffffff;
+            width: 18px;
+            height: 18px;
+            left: -58px;
+            top: 0;
+        }
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
