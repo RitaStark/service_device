@@ -51,7 +51,7 @@ contactForm.addEventListener("click", function (evt) {
 
 
 
-let popUpTextInputs = document.querySelectorAll('.intro__form input[type="text"], .intro__form textarea');
+let popUpTextInputs = document.querySelectorAll('.intro__form input[type="text"], .intro__form input[type="tel"], .intro__form textarea');
 
 popUpTextInputs.forEach(function (el) {
   el.addEventListener("keyup", function (event) {
@@ -72,3 +72,5 @@ document.querySelector(".pop-up__submit").addEventListener("click", function () 
 
 
 
+let selector = document.querySelector(".pop-up__input--phone");
+new Inputmask("\\+7 \\(999\\)-9999999").mask(selector);
