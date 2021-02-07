@@ -1,15 +1,14 @@
 .page-header {
     max-width: 1555px;
     margin: 0 auto;
+    z-index: 10;
     &__wrapper {
-        // max-width: 1495px;
-        // margin: 0 auto;
-
-        @include margin-30-30;
         padding-top: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include margin-30-30;
     }
     &__logo {
         display: flex;
@@ -22,6 +21,7 @@
 
 .main-nav {
     margin-right: 80px;
+    z-index: 2;
     &__list {
         display: flex;
         justify-content: flex-end;
@@ -51,6 +51,7 @@
     }
 
     &__call {
+        cursor: pointer;
         color: #ffffff;
         background: none;
         border: 1px solid #ffffff;
