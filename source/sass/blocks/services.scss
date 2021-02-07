@@ -167,11 +167,14 @@
             max-width: 320px;
             margin: 0 auto;
             padding-top: 53px;
+            padding-bottom: 53px;
         }
         &__header {
             font-size: 28px;
+            margin-top: 0;
         }
         &__list {
+            margin-left: 15px;
             & a {
                 max-width: 290px;
                 position: relative;
