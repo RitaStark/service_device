@@ -1,3 +1,6 @@
+.footer-small {
+    display: none;
+}
 .footer-container {
     margin-top: 65px;
     margin-left: 35px;
@@ -111,6 +114,7 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         list-style-type: none;
         text-transform: uppercase;
         padding-left: 0;
@@ -126,13 +130,9 @@
 }
 
 .copyright-list {
-    &__lifetime {
-        position: absolute;
-        left: 10rem;
-        top: 0;
-    }
     &__confident {
-        padding-left: 100px;
+        padding-left: 18px;
+        padding-right: 160px;
     }
 }
 
@@ -186,6 +186,12 @@
 // tablet----------------------------------------------------------------------------
 
 @media (max-width: $desktop-width) {
+    .footer-big {
+        display: none;
+    }
+    .footer-small {
+        display: block;
+    }
     .footer-wrapper {
         max-width: 720px;
     }
@@ -218,11 +224,26 @@
     .footer-info {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         flex-basis: 100%;
         justify-content: space-between;
         padding-bottom: 24px;
 
         border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+        &__lifetime {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.04em;
+            text-align: left;
+            color: #1b2d37;
+            opacity: 0.5;
+            padding-bottom: 14px;
+
+            @include font-ptmono;
+        }
     }
 
     .footer-address {
@@ -264,6 +285,12 @@
 // mobile ----------------------------------------------------------------------------
 
 @media (max-width: $mobile-width) {
+    .footer-big {
+        display: none;
+    }
+    .footer-small {
+        display: block;
+    }
     .footer-wrapper {
         max-width: 320px;
         display: flex;
@@ -279,7 +306,11 @@
     .footer-info {
         flex-direction: column;
         &__social {
-            padding-top: 81px;
+            padding-top: 31px;
+        }
+        &__lifetime {
+            padding-bottom: 0;
+            padding-top: 26px;
         }
     }
 
@@ -328,7 +359,7 @@
                 font-size: 25px;
                 opacity: 0.5;
                 position: absolute;
-                left: 283px;
+                left: 266px;
                 top: 24px;
             }
         }
@@ -338,6 +369,8 @@
         margin-right: 15px;
         margin-left: 15px;
         margin-top: 0;
+        position: relative;
+        overflow: hidden;
         border-top: 1px solid rgba(98, 105, 98, 0.2);
         &__list {
             display: none;
@@ -378,7 +411,7 @@
             font-size: 25px;
             opacity: 0.5;
             position: absolute;
-            left: 283px;
+            left: 266px;
             top: 24px;
         }
     }
@@ -400,6 +433,7 @@
         &__confident {
             margin-bottom: 30px;
             margin-top: 30px;
+            padding-right: 0;
         }
         &__developer {
             padding-bottom: 30px;
