@@ -148,6 +148,23 @@
     &__link {
         text-decoration: none;
         padding-right: 1rem;
+        & svg {
+            &:hover {
+                fill: #00b2ff;
+            }
+        }
+        &--fb {
+            width: 27px;
+            height: 27px;
+        }
+        &--ok {
+            width: 27px;
+            height: 26px;
+        }
+        &--inst {
+            width: 27px;
+            height: 26px;
+        }
     }
 }
 

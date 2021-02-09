@@ -44,6 +44,22 @@
 
 .advantages__icon {
     fill: #00b2ff;
+    &--stopwatch {
+        width: 30px;
+        height: 37px;
+    }
+    &--hired {
+        width: 32px;
+        height: 32px;
+    }
+    &--detective {
+        width: 31px;
+        height: 26px;
+    }
+    &--tag {
+        width: 33px;
+        height: 32px;
+    }
 }
 .advantages-wrapper {
     margin-top: 80px;
