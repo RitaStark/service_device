@@ -239,6 +239,9 @@
     }
     &__item {
         margin-bottom: 30px;
+        & label {
+            display: none;
+        }
     }
     &__check-mark {
         &:checked + label::before {

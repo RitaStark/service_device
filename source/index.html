@@ -104,15 +104,20 @@
             <p class="pop-up__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
             <div class="pop-up__item">
-              <input class="pop-up__input pop-up__input--name" type="text" name="name" placeholder="Имя" autofocus>
+              <input id="pop-up-name" class="pop-up__input pop-up__input--name" type="text" name="name"
+                placeholder="Имя" autofocus>
+              <label for="pop-up-name"></label>
+            </div>
+
+            <div class=" pop-up__item">
+              <input id="pop-up-phone" class="pop-up__input pop-up__input--phone" type="tel" name="phone-number"
+                placeholder="Телефон">
+              <label for="pop-up-phone"></label>
             </div>
 
             <div class="pop-up__item">
-              <input class="pop-up__input pop-up__input--phone" type="tel" name="phone-number" placeholder="Телефон">
-            </div>
-
-            <div class="pop-up__item">
-              <textarea class="pop-up__input" placeholder="Ваш вопрос" name="ask-question"></textarea>
+              <textarea id="pop-up-text" class="pop-up__input" placeholder="Ваш вопрос" name="ask-question"></textarea>
+              <label for="pop-up-text"></label>
             </div>
 
             <a class="pop-up__submit" href="#">отправить</a>
@@ -228,17 +233,22 @@
           <form class="question-form__data" action="#">
             <div class="question-form__client-data">
               <div class="question-form__item">
-                <input class="question-form__input" id="name" type="text" name="name" placeholder="Имя">
+                <input id="question-form-name" class="question-form__input" id="name" type="text" name="name"
+                  placeholder="Имя">
+                <label for="question-form-name"></label>
               </div>
 
               <div class="question-form__item">
-                <input class="question-form__input" id="phone-number" type="number" min="1" max="10" name="phone-number"
-                  placeholder="Телефон">
+                <input id="question-form-phone" class="question-form__input" id="phone-number" type="number" min="1"
+                  max="10" name="phone-number" placeholder="Телефон">
+                <label for="question-form-phone"></label>
               </div>
             </div>
 
             <div class="question-form__item question-form__ask">
-              <textarea class="question-form__input" id="type-question" placeholder="Ваш вопрос"></textarea>
+              <textarea id="question-form-text" class="question-form__input" id="type-question"
+                placeholder="Ваш вопрос"></textarea>
+              <label for="question-form-text"></label>
             </div>
 
             <div class="question-form__agreements">

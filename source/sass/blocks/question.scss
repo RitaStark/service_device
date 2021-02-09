@@ -73,6 +73,9 @@
             border: none;
             background-color: #58c2f0;
         }
+        & label {
+            display: none;
+        }
     }
 
     &__input {
