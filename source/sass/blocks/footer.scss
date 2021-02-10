@@ -139,7 +139,6 @@
 .social-info {
     &__list {
         display: flex;
-        justify-content: space-between;
         list-style-type: none;
         padding-left: 0;
         justify-content: flex-start;
@@ -359,6 +358,10 @@
             }
         }
     }
+
+    // .social-info__list {
+    //     justify-content: center;
+    // }
 
     .footer-list {
         margin-top: 0;
