@@ -1,0 +1,230 @@
+
+> Liga-A-start-template@1.0.0 test /home/rita/thecode/league_A/smart_device/gulp-template
+> npm run editorconfig && npm run stylelint && eslint source/js/
+
+
+> Liga-A-start-template@1.0.0 editorconfig /home/rita/thecode/league_A/smart_device/gulp-template
+> editorconfig-cli
+
+Using '.editorconfig' from: "/home/rita/thecode/league_A/smart_device/gulp-template/.editorconfig"
+Loaded GLOBs from '/home/rita/thecode/league_A/smart_device/gulp-template/package.json': *.json,*.js,source/*.html,source/js/**/*.js,source/img/**/*.svg,source/sass/**/*.{sass,scss}
+
+> Liga-A-start-template@1.0.0 stylelint /home/rita/thecode/league_A/smart_device/gulp-template
+> stylelint "source/sass/**/*.scss" --syntax scss
+
+
+source/sass/fonts.scss
+  8:5  ✖  Expected indentation of 8 spaces   indentation
+  9:5  ✖  Expected indentation of 8 spaces   indentation
+ 18:5  ✖  Expected indentation of 8 spaces   indentation
+ 19:5  ✖  Expected indentation of 8 spaces   indentation
+
+source/sass/blocks/about-company.scss
+   5:5   ✖  Expected empty line before rule   rule-empty-line-before
+   9:5   ✖  Expected empty line before rule   rule-empty-line-before
+  18:5   ✖  Expected empty line before rule   rule-empty-line-before
+  28:5   ✖  Expected empty line before rule   rule-empty-line-before
+  32:5   ✖  Expected empty line before rule   rule-empty-line-before
+  57:5   ✖  Expected empty line before rule   rule-empty-line-before
+  62:21  ✖  Expected "#fff" to be "#ffffff"   color-hex-length      
+  71:5   ✖  Expected empty line before rule   rule-empty-line-before
+  81:9   ✖  Expected empty line before rule   rule-empty-line-before
+  85:9   ✖  Expected empty line before rule   rule-empty-line-before
+  88:9   ✖  Expected empty line before rule   rule-empty-line-before
+  91:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 102:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 108:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 111:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 114:9   ✖  Expected empty line before rule   rule-empty-line-before
+
+source/sass/blocks/advantages.scss
+   4:5  ✖  Expected empty line before rule   rule-empty-line-before
+  12:5  ✖  Expected empty line before rule   rule-empty-line-before
+  20:5  ✖  Expected empty line before rule   rule-empty-line-before
+  36:9  ✖  Expected empty line before rule   rule-empty-line-before
+  39:9  ✖  Expected empty line before rule   rule-empty-line-before
+  47:5  ✖  Expected empty line before rule   rule-empty-line-before
+  51:5  ✖  Expected empty line before rule   rule-empty-line-before
+  55:5  ✖  Expected empty line before rule   rule-empty-line-before
+  59:5  ✖  Expected empty line before rule   rule-empty-line-before
+  64:1  ✖  Expected empty line before rule   rule-empty-line-before
+  74:9  ✖  Expected empty line before rule   rule-empty-line-before
+  78:9  ✖  Expected empty line before rule   rule-empty-line-before
+  82:5  ✖  Expected empty line before rule   rule-empty-line-before
+  93:9  ✖  Expected empty line before rule   rule-empty-line-before
+  96:9  ✖  Expected empty line before rule   rule-empty-line-before
+ 102:9  ✖  Expected empty line before rule   rule-empty-line-before
+ 106:5  ✖  Expected empty line before rule   rule-empty-line-before
+
+source/sass/blocks/footer.scss
+   4:1   ✖  Expected empty line before rule                                                rule-empty-line-before   
+  36:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+  44:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+  49:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+  57:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+  60:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+  63:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+  67:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+  80:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 147:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 150:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 155:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 159:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 163:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 174:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 186:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 208:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 211:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 214:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 218:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 221:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 223:13  ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 227:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 231:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 234:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 237:9   ✖  Expected empty line before at-rule                                             at-rule-empty-line-before
+ 249:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 268:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 273:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 276:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 280:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 284:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 288:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 292:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 295:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 307:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 310:5   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 324:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 327:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 340:13  ✖  Expected empty line before at-rule                                             at-rule-empty-line-before
+ 342:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 349:17  ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 352:17  ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 355:17  ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 366:5   ✖  Unexpected duplicate selector ".footer-list", first used at line 333           no-duplicate-selectors   
+ 368:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 368:9   ✖  Unexpected duplicate selector ".footer-list__header", first used at line 337   no-duplicate-selectors   
+ 377:13  ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 395:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 398:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 409:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 414:13  ✖  Expected empty line before at-rule                                             at-rule-empty-line-before
+ 416:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 419:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 425:13  ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 429:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 453:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+ 458:9   ✖  Expected empty line before rule                                                rule-empty-line-before   
+
+source/sass/blocks/intro.scss
+   4:1   ✖  Expected empty line before rule                                rule-empty-line-before                           
+  27:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+  32:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+  44:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+  58:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+  69:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+  73:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 109:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 112:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 123:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 127:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 132:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 138:9   ✖  Unexpected vendor-prefix "-webkit-box-sizing"                  property-no-vendor-prefix                        
+ 152:1   ✖  Unexpected duplicate selector ".intro", first used at line 4   no-duplicate-selectors                           
+ 160:9   ✖  Unexpected shorthand "padding" after "padding-top"             declaration-block-no-shorthand-property-overrides
+ 160:9   ✖  Unexpected shorthand "padding" after "padding-left"            declaration-block-no-shorthand-property-overrides
+ 160:9   ✖  Unexpected shorthand "padding" after "padding-right"           declaration-block-no-shorthand-property-overrides
+ 163:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 170:13  ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 174:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 177:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 184:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 199:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 206:30  ✖  Unexpected unit                                                length-zero-no-unit                              
+ 214:1   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 216:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 228:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 238:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 240:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 244:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 256:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 266:5   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 275:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 297:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 302:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 313:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 320:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 331:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 348:13  ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 362:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 368:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 372:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 375:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 378:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 389:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 395:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 399:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 410:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 413:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 417:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 421:13  ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 434:13  ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 448:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 458:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+ 461:9   ✖  Expected empty line before rule                                rule-empty-line-before                           
+
+source/sass/blocks/page-header.scss
+   5:5   ✖  Expected empty line before rule   rule-empty-line-before
+  13:5   ✖  Expected empty line before rule   rule-empty-line-before
+  17:5   ✖  Expected empty line before rule   rule-empty-line-before
+  25:5   ✖  Expected empty line before rule   rule-empty-line-before
+  32:5   ✖  Expected empty line before rule   rule-empty-line-before
+  42:5   ✖  Expected empty line before rule   rule-empty-line-before
+  68:5   ✖  Expected empty line before rule   rule-empty-line-before
+  75:5   ✖  Expected empty line before rule   rule-empty-line-before
+  78:5   ✖  Expected empty line before rule   rule-empty-line-before
+  87:5   ✖  Expected empty line before rule   rule-empty-line-before
+ 109:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 113:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 115:13  ✖  Expected empty line before rule   rule-empty-line-before
+ 118:13  ✖  Expected empty line before rule   rule-empty-line-before
+ 124:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 138:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 141:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 153:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 163:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 173:9   ✖  Expected empty line before rule   rule-empty-line-before
+
+source/sass/blocks/question.scss
+   3:5   ✖  Expected empty line before rule   rule-empty-line-before
+  14:5   ✖  Expected empty line before rule   rule-empty-line-before
+  26:5   ✖  Expected empty line before rule   rule-empty-line-before
+  38:5   ✖  Expected empty line before rule   rule-empty-line-before
+  46:5   ✖  Expected empty line before rule   rule-empty-line-before
+  50:9   ✖  Expected empty line before rule   rule-empty-line-before
+  65:5   ✖  Expected empty line before rule   rule-empty-line-before
+  74:9   ✖  Expected empty line before rule   rule-empty-line-before
+  91:5   ✖  Expected empty line before rule   rule-empty-line-before
+  98:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 109:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 115:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 120:5   ✖  Expected empty line before rule   rule-empty-line-before
+ 122:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 128:5   ✖  Expected empty line before rule   rule-empty-line-before
+ 140:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 150:5   ✖  Expected empty line before rule   rule-empty-line-before
+ 155:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 174:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 177:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 180:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 184:13  ✖  Expected empty line before rule   rule-empty-line-before
+ 199:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 203:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 206:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 208:13  ✖  Expected empty line before rule   rule-empty-line-before
+ 212:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 219:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 224:13  ✖  Expected empty line before rule   rule-empty-line-before
+ 230:9   ✖  Expected empty line before rule   rule-empty-line-before
+ 235:13  ✖  Expected empty line before rule   rule-empty-line-before
+
