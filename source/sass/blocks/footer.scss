@@ -7,13 +7,9 @@
     margin-right: 35px;
 }
 
-.footer-wrapper,
-.footer-copyright {
+.footer-wrapper {
     max-width: 1495px;
     margin: 0 auto;
-}
-
-.footer-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -107,98 +103,6 @@
     }
 }
 
-.footer-copyright {
-    opacity: 0.2;
-    position: relative;
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        list-style-type: none;
-        text-transform: uppercase;
-        padding-left: 0;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.04em;
-        text-align: left;
-
-        @include font-ptmono;
-    }
-}
-
-.copyright-list {
-    &__confident {
-        padding-left: 18px;
-        padding-right: 160px;
-    }
-}
-
-.social-info {
-    &__list {
-        display: flex;
-        list-style-type: none;
-        padding-left: 0;
-        justify-content: flex-start;
-        margin-top: 49px;
-    }
-    &__link {
-        text-decoration: none;
-        padding-right: 1rem;
-        & svg {
-            &:hover {
-                fill: #00b2ff;
-            }
-        }
-        &--fb {
-            width: 27px;
-            height: 27px;
-        }
-        &--ok {
-            width: 27px;
-            height: 26px;
-        }
-        &--inst {
-            width: 27px;
-            height: 26px;
-        }
-    }
-}
-
-.address-details {
-    & input {
-        display: none;
-    }
-    &__header {
-        text-transform: uppercase;
-        padding-left: 10px;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 16px;
-        letter-spacing: 0.07em;
-        text-align: left;
-
-        @include font-roboto;
-    }
-    &__list {
-        list-style-type: none;
-        padding-left: 0;
-        font-size: 15px;
-        line-height: 25px;
-        color: #1b2d37;
-        opacity: 0.5;
-
-        @include font-ptmono;
-    }
-
-    &__item {
-        padding-bottom: 10px;
-    }
-}
-
 // tablet----------------------------------------------------------------------------
 
 @media (max-width: $desktop-width) {
@@ -265,36 +169,9 @@
     .footer-address {
         @include margin-top-38;
     }
-    .social-info {
-        &__list {
-            margin-top: 0;
-        }
-    }
+
     .footer-copyright {
         max-width: 720px;
-    }
-    .copyright-list {
-        &__rights {
-            display: none;
-        }
-        &__lifetime {
-            left: 323px;
-            top: -448px;
-        }
-        &__confident {
-            padding-left: 0;
-        }
-    }
-    .address-details {
-        & input {
-            display: none;
-        }
-        &__header {
-            margin-bottom: 0;
-        }
-        &__list {
-            margin-top: 38px;
-        }
     }
 }
 
@@ -359,10 +236,6 @@
         }
     }
 
-    // .social-info__list {
-    //     justify-content: center;
-    // }
-
     .footer-list {
         margin-top: 0;
         &__header {
@@ -399,64 +272,6 @@
             &:checked ~ .address-details__list {
                 display: block;
             }
-        }
-    }
-
-    .address-details {
-        position: relative;
-        padding-top: 29px;
-        padding-bottom: 29px;
-        &__header {
-            margin-top: 0;
-            padding-top: 29px;
-            padding-bottom: 29px;
-            padding-left: 0;
-            @include font-roboto;
-        }
-        &__list {
-            display: none;
-        }
-        & input {
-            display: none;
-
-            &:checked ~ .address-details__list {
-                display: block;
-            }
-            &:checked + .address-details__label::after {
-                content: "-";
-            }
-        }
-        &__label::after {
-            content: "+";
-            font-size: 25px;
-            opacity: 0.5;
-            position: absolute;
-            left: 266px;
-            top: 24px;
-        }
-    }
-
-    .footer-copyright {
-        &__list {
-            flex-direction: column;
-            text-align: center;
-        }
-    }
-
-    .copyright-list {
-        &__lifetime {
-            left: 50%;
-            transform: translateX(-50%);
-            top: -266px;
-            min-width: 239px;
-        }
-        &__confident {
-            margin-bottom: 30px;
-            margin-top: 30px;
-            padding-right: 0;
-        }
-        &__developer {
-            padding-bottom: 30px;
         }
     }
 }

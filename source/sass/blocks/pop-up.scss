@@ -1,0 +1,74 @@
+.pop-up {
+    position: relative;
+    &__header {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 39px;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        @include font-roboto;
+    }
+    &__text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        color: #ffffff;
+
+        @include font-ptmono;
+    }
+    &__item {
+        margin-bottom: 30px;
+        & label {
+            display: none;
+        }
+    }
+    &__check-mark {
+        &:checked + label::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: url("../images/icon-tick.svg") no-repeat;
+            background-position: center;
+            background-size: 10px 10px;
+            left: 5px;
+            top: 5px;
+        }
+        & + label::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #ffffff;
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__close-icon {
+        width: 20px;
+        height: 20px;
+        background-color: #00b2ff;
+        border: none;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            background: url("../images/icon-close.svg") no-repeat;
+            background-position: center;
+            background-size: 17px 17px;
+            right: 1px;
+            top: 1px;
+        }
+    }
+}

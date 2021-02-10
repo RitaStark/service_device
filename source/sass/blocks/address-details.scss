@@ -1,0 +1,85 @@
+.address-details {
+    & input {
+        display: none;
+    }
+    &__header {
+        text-transform: uppercase;
+        padding-left: 10px;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0.07em;
+        text-align: left;
+
+        @include font-roboto;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: 15px;
+        line-height: 25px;
+        color: #1b2d37;
+        opacity: 0.5;
+
+        @include font-ptmono;
+    }
+
+    &__item {
+        padding-bottom: 10px;
+    }
+}
+
+// tablet----------------------------------------------------------------------------
+
+@media (max-width: $desktop-width) {
+    .address-details {
+        & input {
+            display: none;
+        }
+        &__header {
+            margin-bottom: 0;
+        }
+        &__list {
+            margin-top: 38px;
+        }
+    }
+}
+
+// mobile ----------------------------------------------------------------------------
+
+@media (max-width: $mobile-width) {
+    .address-details {
+        position: relative;
+        padding-top: 29px;
+        padding-bottom: 29px;
+        &__header {
+            margin-top: 0;
+            padding-top: 29px;
+            padding-bottom: 29px;
+            padding-left: 0;
+            @include font-roboto;
+        }
+        &__list {
+            display: none;
+        }
+        & input {
+            display: none;
+
+            &:checked ~ .address-details__list {
+                display: block;
+            }
+            &:checked + .address-details__label::after {
+                content: "-";
+            }
+        }
+        &__label::after {
+            content: "+";
+            font-size: 25px;
+            opacity: 0.5;
+            position: absolute;
+            left: 266px;
+            top: 24px;
+        }
+    }
+}

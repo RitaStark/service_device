@@ -1,0 +1,45 @@
+.social-info {
+    &__list {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        justify-content: flex-start;
+        margin-top: 49px;
+    }
+    &__link {
+        text-decoration: none;
+        padding-right: 1rem;
+        & svg {
+            &:hover {
+                fill: #00b2ff;
+            }
+        }
+        &--fb {
+            width: 27px;
+            height: 27px;
+        }
+        &--ok {
+            width: 27px;
+            height: 26px;
+        }
+        &--inst {
+            width: 27px;
+            height: 26px;
+        }
+    }
+}
+
+// tablet----------------------------------------------------------------------------
+
+@media (max-width: $desktop-width) {
+    .social-info {
+        &__list {
+            margin-top: 0;
+        }
+    }
+}
+
+// mobile ----------------------------------------------------------------------------
+
+@media (max-width: $mobile-width) {
+}
