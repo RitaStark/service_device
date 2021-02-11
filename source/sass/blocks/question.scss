@@ -1,160 +1,178 @@
 .question-form {
     background-color: #00b2ff;
-    &__wrapper {
-        max-width: 1170px;
-        margin: 0 auto;
-        padding-top: 96px;
-        padding-bottom: 113px;
-        display: flex;
-    }
+}
 
-    &__block {
-        width: 50%;
-    }
-    &__header {
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 51px;
-        text-align: left;
-        color: #ffffff;
-        margin-top: 0;
-        margin-bottom: 5px;
+.question-form__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 113px;
+    display: flex;
+}
 
-        @include font-roboto;
-    }
-    &__text {
+.question-form__block {
+    width: 50%;
+}
+
+.question-form__header {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    @include font-roboto;
+}
+
+.question-form__text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include font-ptmono;
+}
+
+.question-form__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 49px;
+
+    @include font-ptmono;
+}
+
+.question-form__ask {
+    flex-basis: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    & textarea {
+        width: 96%;
+        height: 154px;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        text-align: left;
         color: #ffffff;
-        margin-top: 0;
-        margin-bottom: 0;
-
-        @include font-ptmono;
-    }
-    &__data {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-top: 49px;
-
-        @include font-ptmono;
-    }
-    &__ask {
-        flex-basis: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        & textarea {
-            width: 96%;
-            height: 154px;
-            font-size: 16px;
-            color: #ffffff;
-            resize: vertical;
-            padding-left: 20px;
-            padding-top: 20px;
-
-            &::placeholder {
-                padding-left: 0;
-                border: none;
-            }
-        }
-    }
-    &__item {
-        & input[type="text"],
-        input[type="number"] {
-            width: 260px;
-            font-size: 16px;
-            color: #ffffff;
-            border: none;
-            background-color: #58c2f0;
-        }
-        & label {
-            display: none;
-        }
-    }
-
-    &__input {
-        background-color: #58c2f0;
-        height: 50px;
+        resize: vertical;
+        padding-left: 20px;
+        padding-top: 20px;
 
         &::placeholder {
-            padding-left: 20px;
-            color: #ffffff;
-            font-size: 16px;
-
-            @include font-ptmono;
+            padding-left: 0;
+            border: none;
         }
     }
-    &__agreements {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
+}
+
+.question-form__item {
+    & input[type="text"],
+    input[type="number"] {
+        width: 260px;
+        font-size: 16px;
         color: #ffffff;
-        width: 100%;
-        & a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: #ffffff;
-            border: 1px solid #ffffff;
-            border-radius: 5px;
-            padding: 14px 4px 12px 55px;
-            width: 30%;
+        border: none;
+        background-color: #58c2f0;
+    }
 
-            @include font-roboto;
-        }
-        & p {
-            padding-right: 50px;
-            line-height: 16px;
-            margin-top: 8px;
-            margin-bottom: 8px;
-        }
-        & label {
-            position: relative;
-            cursor: pointer;
-        }
+    & label {
+        display: none;
     }
-    &__image {
-        width: 100%;
-        & img {
-            width: 510px;
-            padding-top: 50%;
-            transform: translateY(-25%);
-        }
+}
+
+.question-form__input {
+    background-color: #58c2f0;
+    height: 50px;
+
+    &::placeholder {
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 16px;
+
+        @include font-ptmono;
     }
-    &__check-mark {
-        &:checked + label::before {
-            content: "";
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: url("../images/icon-tick.svg") no-repeat;
-            background-position: center;
-            background-size: 10px 10px;
-            left: -53px;
-            top: 05px;
-        }
-        & + label::after {
-            content: "";
-            position: absolute;
-            border: 1px solid #ffffff;
-            width: 18px;
-            height: 18px;
-            left: -58px;
-            top: 0;
-        }
+}
+
+.question-form__agreements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+.question-form__agreements a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 14px 4px 12px 55px;
+    width: 30%;
+
+    @include font-roboto;
+}
+
+.question-form__agreements p {
+    padding-right: 50px;
+    line-height: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.question-form__agreements label {
+    position: relative;
+    cursor: pointer;
+}
+
+.question-form__image {
+    width: 100%;
+}
+
+.question-form__image img {
+    width: 510px;
+    padding-top: 50%;
+    transform: translateY(-25%);
+}
+
+.question-form__check-mark {
+    &:checked + label::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: url("../images/icon-tick.svg") no-repeat;
+        background-position: center;
+        background-size: 10px 10px;
+        left: -53px;
+        top: 05px;
     }
-    &__client-data {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        & > div {
-            margin-bottom: 30px;
-        }
+
+    & + label::after {
+        content: "";
+        position: absolute;
+        border: 1px solid #ffffff;
+        width: 18px;
+        height: 18px;
+        left: -58px;
+        top: 0;
+    }
+}
+
+.question-form__client-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & > div {
+        margin-bottom: 30px;
     }
 }
 
@@ -165,82 +183,89 @@ input[type="checkbox"] {
 // tablet----------------------------------------------------------------------------
 
 @media (max-width: $desktop-width) {
-    .question-form {
-        &__wrapper {
-            max-width: 770px;
-            margin: 0 auto;
-            padding: 83px 63px 103px 63px;
+    .question-form__wrapper {
+        max-width: 770px;
+        margin: 0 auto;
+        padding: 83px 63px 103px 63px;
+    }
+
+    .question-form__image {
+        display: none;
+    }
+
+    .question-form__header {
+        font-size: 32px;
+    }
+
+    .question-form__agreements {
+        & label {
+            padding-right: 38px;
         }
-        &__image {
-            display: none;
-        }
-        &__header {
-            font-size: 32px;
-        }
-        &__agreements {
-            & label {
-                padding-right: 38px;
-            }
-            & a {
-                padding: 14px 4px 12px 69px;
-            }
+
+        & a {
+            padding: 14px 4px 12px 69px;
         }
     }
 }
 
 // mobile ----------------------------------------------------------------------------
 @media (max-width: $mobile-width) {
-    .question-form {
-        &__wrapper {
-            max-width: 320px;
-            margin: 0 auto;
-            padding: 33px 15px 41px 15px;
+    .question-form__wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 33px 15px 41px 15px;
+    }
+
+    .question-form__header {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .question-form__data {
+        padding-top: 30px;
+    }
+
+    .question-form__ask {
+        margin-top: 0;
+
+        & textarea {
+            width: 92%;
         }
-        &__header {
-            font-size: 28px;
-            line-height: 40px;
+    }
+
+    .question-form__item {
+        & input[type="text"],
+        input[type="number"] {
+            width: 290px;
+            font-size: 16px;
         }
-        &__data {
-            padding-top: 30px;
+    }
+
+    .question-form__agreements a {
+        display: block;
+        width: 100%;
+    }
+
+    .question-form__agreements label {
+        padding-left: 40px;
+        padding-top: 30px;
+        padding-right: 5px;
+    }
+
+    .question-form__check-mark {
+        &:checked + label::before {
+            left: 10px;
+            top: 35px;
         }
-        &__ask {
-            margin-top: 0;
-            & textarea {
-                width: 92%;
-            }
-        }
-        &__item {
-            & input[type="text"],
-            input[type="number"] {
-                width: 290px;
-                font-size: 16px;
-            }
-        }
-        &__agreements {
-            & a {
-                display: block;
-                width: 100%;
-            }
-            & label {
-                padding-left: 40px;
-                padding-top: 30px;
-                padding-right: 5px;
-            }
-        }
-        &__check-mark {
-            &:checked + label::before {
-                left: 10px;
-                top: 35px;
-            }
-            & + label::after {
-                content: "";
-                position: absolute;
-                border: 1px solid #ffffff;
-                width: 18px;
-                height: 18px;
-                left: 5px;
-                top: 30px;
-            }
+
+        & + label::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #ffffff;
+            width: 18px;
+            height: 18px;
+            left: 5px;
+            top: 30px;
         }
     }
 }

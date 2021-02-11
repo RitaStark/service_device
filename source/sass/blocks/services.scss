@@ -1,174 +1,171 @@
 .services {
     background-color: #1b2d37;
+}
 
-    &__wrapper {
-        max-width: 1170px;
-        margin: 0 auto;
-        padding-top: 93px;
-        padding-bottom: 127px;
+.services__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 93px;
+    padding-bottom: 127px;
+}
+
+.services__header {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51px;
+    text-align: left;
+    color: #ffffff;
+
+    @include font-roboto;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services__list a {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+
+    @include font-roboto;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        width: 358px;
+        height: 674px;
     }
+}
 
-    &__header {
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 51px;
-        text-align: left;
-        color: #ffffff;
+.services__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 326px;
+    height: 620px;
+    padding-top: 53px;
+    padding-left: 44px;
+    position: relative;
 
-        @include font-roboto;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: #00b2ff;
+        background-image: url("../images/services-arrow.svg");
+        background-size: 8px 8px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 63px;
+        height: 63px;
+        right: 12px;
+        bottom: 0;
     }
+}
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        & a {
-            text-decoration: none;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 30px;
-            text-align: left;
-            color: #ffffff;
-            cursor: pointer;
-
-            @include font-roboto;
-
-            position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background-repeat: no-repeat;
-                background-size: cover;
-                opacity: 0.3;
-                top: 0;
-                left: 0;
-                width: 358px;
-                height: 674px;
-            }
-        }
+.services__production-link {
+    &::before {
+        background-image: url("../images/product1_desktop.png");
     }
+}
 
-    &__item {
-        margin-right: 30px;
-        margin-bottom: 30px;
-        width: 326px;
-        height: 620px;
-        padding-top: 53px;
-        padding-left: 44px;
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            background-color: #00b2ff;
-            background-image: url("../images/services-arrow.svg");
-            background-size: 4px 8px;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 63px;
-            height: 63px;
-            right: 12px;
-            bottom: 0;
-        }
+.services__installation-link {
+    &::before {
+        background-image: url("../images/product2_desktop.png");
     }
+}
 
-    &__production-link {
-        &::before {
-            background-image: url("../images/product1_desktop.png");
-        }
+.services__accessories-link {
+    &::before {
+        background-image: url("../images/product3_desktop.png");
     }
+}
 
-    &__installation-link {
-        &::before {
-            background-image: url("../images/product2_desktop.png");
-        }
-    }
-
-    &__accessories-link {
-        &::before {
-            background-image: url("../images/product3_desktop.png");
-        }
-    }
-
-    &__accessories {
-        margin-right: 0;
-    }
+.services__accessories {
+    margin-right: 0;
 }
 
 // tablet----------------------------------------------------------------------------
 
 @media (max-width: $desktop-width) {
-    .services {
-        &__wrapper {
-            max-width: 770px;
-            margin: 0 auto;
+    .services__wrapper {
+        max-width: 770px;
+        margin: 0 auto;
+    }
+
+    .services__header {
+        font-size: 32px;
+        margin-left: 17px;
+        margin-right: 25px;
+    }
+
+    .services__list {
+        margin-left: 17px;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .services__list a {
+        max-width: 715px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.3;
+            top: 0;
+            left: 0;
+            width: 715px;
+            height: 256px;
         }
+    }
 
-        &__header {
-            font-size: 32px;
-            margin-left: 17px;
-            margin-right: 25px;
+    .services__item {
+        width: 671px;
+        height: 210px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+        padding-top: 46px;
+        padding-left: 44px;
+
+        &::after {
+            right: 0;
+            bottom: 0;
         }
+    }
 
-        &__list {
-            margin-left: 17px;
-            flex-direction: column;
-            justify-content: center;
-            overflow: hidden;
-
-            & a {
-                max-width: 715px;
-                position: relative;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    opacity: 0.3;
-                    top: 0;
-                    left: 0;
-                    width: 715px;
-                    height: 256px;
-                }
-            }
+    .services__production-link {
+        &::before {
+            background-image: url("../images/product1_tablet.png");
         }
+    }
 
-        &__item {
-            width: 671px;
-            height: 210px;
-            margin-right: 30px;
-            margin-bottom: 30px;
-
-            padding-top: 46px;
-            padding-left: 44px;
-
-            &::after {
-                right: 0;
-                bottom: 0;
-            }
+    .services__installation-link {
+        &::before {
+            background-image: url("../images/product2_tablet.png");
         }
+    }
 
-        &__production-link {
-            &::before {
-                background-image: url("../images/product1_tablet.png");
-            }
-        }
-
-        &__installation-link {
-            &::before {
-                background-image: url("../images/product2_tablet.png");
-            }
-        }
-
-        &__accessories-link {
-            &::before {
-                background-image: url("../images/product3_tablet.png");
-            }
+    .services__accessories-link {
+        &::before {
+            background-image: url("../images/product3_tablet.png");
         }
     }
 }
@@ -176,63 +173,61 @@
 // mobile ----------------------------------------------------------------------------
 
 @media (max-width: $mobile-width) {
-    .services {
-        &__wrapper {
-            max-width: 320px;
-            margin: 0 auto;
-            padding-top: 53px;
-            padding-bottom: 53px;
+    .services__wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+        padding-top: 53px;
+        padding-bottom: 53px;
+    }
+
+    .services__header {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .services__list {
+        margin-left: 15px;
+    }
+
+    .services__list a {
+        max-width: 290px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.3;
+            top: 0;
+            left: 0;
+            width: 290px;
+            height: 256px;
         }
+    }
 
-        &__header {
-            font-size: 28px;
-            margin-top: 0;
+    .services__item {
+        max-width: 255px;
+        height: 233px;
+        padding-top: 23px;
+        padding-left: 35px;
+    }
+
+    .services__item__production-link {
+        &::before {
+            background-image: url("../images/product1_mobile.png");
         }
+    }
 
-        &__list {
-            margin-left: 15px;
-
-            & a {
-                max-width: 290px;
-                position: relative;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    opacity: 0.3;
-                    top: 0;
-                    left: 0;
-                    width: 290px;
-                    height: 256px;
-                }
-            }
+    .services__item__installation-link {
+        &::before {
+            background-image: url("../images/product2_mobile.png");
         }
+    }
 
-        &__item {
-            max-width: 255px;
-            height: 233px;
-            padding-top: 23px;
-            padding-left: 35px;
-
-            &__production-link {
-                &::before {
-                    background-image: url("../images/product1_mobile.png");
-                }
-            }
-
-            &__installation-link {
-                &::before {
-                    background-image: url("../images/product2_mobile.png");
-                }
-            }
-
-            &__accessories-link {
-                &::before {
-                    background-image: url("../images/product3_mobile.png");
-                }
-            }
+    .services__item__accessories-link {
+        &::before {
+            background-image: url("../images/product3_mobile.png");
         }
     }
 }

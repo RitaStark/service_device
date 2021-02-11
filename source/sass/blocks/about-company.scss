@@ -2,75 +2,82 @@
     max-width: 1170px;
     margin: 0 auto;
     padding-bottom: 93px;
-    &__wrapper {
-        padding-left: 183px;
-        position: relative;
-    }
-    &__header {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 51px;
-        color: #666666;
+}
 
-        @include font-roboto;
-    }
-    &__par {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        text-align: left;
-        color: #666666;
+.about-company__wrapper {
+    padding-left: 183px;
+    position: relative;
+}
 
-        @include font-ptmono;
-    }
-    &__par-second {
-        margin-bottom: 0;
-        padding-bottom: 43px;
-    }
-    &__button {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #00b2ff;
-        font-size: 14px;
-        font-weight: 700;
-        border: 1px solid #00b2ff;
-        border-radius: 5px;
-        padding: 11px 50px 11px 50px;
-        margin-top: 43px;
+.about-company__header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: #666666;
 
-        @include font-roboto;
-    }
+    @include font-roboto;
+}
 
-    &__info {
-        background-image: url("../images/year.jpg");
-        background-repeat: no-repeat;
-        background-size: 113px 303px;
+.about-company__par {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #666666;
 
-        width: 113px;
-        height: 294px;
-        position: absolute;
-        top: 10px;
-        left: 1px;
-    }
-    &__year {
-        transform: rotate(-90deg);
-        font-weight: bold;
-        font-size: 150px;
-        line-height: 120px;
-        background: #fff;
-        mix-blend-mode: lighten;
+    @include font-ptmono;
+}
 
-        position: absolute;
-        top: 97px;
-        left: -90px;
+.about-company__par-second {
+    margin-bottom: 0;
+    padding-bottom: 43px;
+}
 
-        @include font-roboto;
-    }
-    &__tablet-text {
-        display: none;
-    }
+.about-company__button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00b2ff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #00b2ff;
+    border-radius: 5px;
+    padding: 11px 50px 11px 50px;
+    margin-top: 43px;
+
+    @include font-roboto;
+}
+
+.about-company__info {
+    background-image: url("../images/year.jpg");
+    background-repeat: no-repeat;
+    background-size: 113px 303px;
+
+    width: 113px;
+    height: 294px;
+    position: absolute;
+    top: 10px;
+    left: 1px;
+}
+
+.about-company__year {
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 120px;
+    background: #ffffff;
+    mix-blend-mode: lighten;
+
+    position: absolute;
+    top: 97px;
+    left: -90px;
+
+    @include font-roboto;
+}
+
+.about-company__tablet-text {
+    display: none;
 }
 
 // tablet----------------------------------------------------------------------------
@@ -78,19 +85,23 @@
     .about-company {
         max-width: 720px;
         margin: 0 auto;
-        &__wrapper {
-            padding-left: 138px;
-            padding-right: 44px;
-        }
-        &__header {
-            font-size: 32px;
-        }
-        &__desktop-text {
-            display: none;
-        }
-        &__tablet-text {
-            display: inline;
-        }
+    }
+
+    .about-company__wrapper {
+        padding-left: 138px;
+        padding-right: 44px;
+    }
+
+    .about-company__header {
+        font-size: 32px;
+    }
+
+    .about-company__desktop-text {
+        display: none;
+    }
+
+    .about-company__tablet-text {
+        display: inline;
     }
 }
 
@@ -99,20 +110,24 @@
 @media (max-width: $mobile-width) {
     .about-company {
         margin-bottom: 65px;
-        &__wrapper {
-            max-width: 320px;
-            margin: 0 15px;
-            padding-left: 0;
-            padding-right: 0;
-        }
-        &__header {
-            font-size: 28px;
-        }
-        &__year {
-            display: none;
-        }
-        &__info {
-            display: none;
-        }
+    }
+
+    .about-company__wrapper {
+        max-width: 320px;
+        margin: 0 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about-company__header {
+        font-size: 28px;
+    }
+
+    .about-company__year {
+        display: none;
+    }
+
+    .about-company__info {
+        display: none;
     }
 }

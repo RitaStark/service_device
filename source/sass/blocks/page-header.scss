@@ -2,147 +2,35 @@
     max-width: 1555px;
     margin: 0 auto;
     z-index: 10;
-    &__wrapper {
-        padding-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @include margin-30-30;
-    }
-    &__logo {
-        display: flex;
-        flex-direction: row;
-    }
-    &__logo-details {
-        text-decoration: none;
-    }
 }
 
-.main-nav {
-    margin-right: 80px;
-    z-index: 2;
-    &__list {
-        display: flex;
-        justify-content: flex-end;
-        list-style-type: none;
-        align-items: center;
-        z-index: 1;
-    }
-    &__email {
-        margin-right: 4rem;
-        color: #ffffff;
-        position: relative;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 17.92px;
-
-        @include font-ptmono;
-    }
-    &__tel {
-        margin-right: 3rem;
-        color: #ffffff;
-        min-width: 160px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 17.92px;
-
-        @include font-ptmono;
-    }
-
-    &__call {
-        cursor: pointer;
-        color: #ffffff;
-        background: none;
-        border: 1px solid #ffffff;
-        border-radius: 5px;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 14px 13px;
-        font-size: 14px;
-        line-height: 16.41px;
-        font-weight: 700;
-        text-align: center;
-        font-family: "Roboto Condensed", "Arial", sans-serif;
-    }
-    &__call-order {
-        min-width: 170px;
-    }
-}
-
-.details {
+.page-header__wrapper {
+    padding-top: 30px;
     display: flex;
-    &__block {
-        margin-left: 16px;
-    }
-    &__name {
-        color: #ffffff;
-        font-family: "Roboto Condensed", "Arial", sans-serif;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 29.3px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    &__tag {
-        color: #e5e5e5;
-        font-family: "Roboto Condensed", "Arial", sans-serif;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 14.06px;
-        margin-top: 0;
-    }
+    justify-content: space-between;
+    align-items: center;
+
+    @include margin-30-30;
+}
+
+.page-header__logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-header__logo-details {
+    text-decoration: none;
 }
 
 // tablet----------------------------------------------------------------------------
 @media (max-width: $desktop-width) {
-    .page-header {
-        &__wrapper {
-            margin: 0 25px;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    .main-nav {
-        margin-right: 0;
-        &__list {
-            display: flex;
-            justify-content: flex-end;
-        }
-        &__email {
-            margin-right: 2rem;
-            &-none {
-                display: none;
-            }
-            &::before {
-                width: 25px;
-                height: 19px;
-                background-repeat: no-repeat;
-            }
-        }
-        &__tel {
-            min-width: 0;
-            margin-right: 0;
-
-            &-none {
-                display: none;
-            }
-
-            &::before {
-                width: 24px;
-                height: 24px;
-                background-repeat: no-repeat;
-            }
-        }
-        &__call {
-            display: none;
-        }
-        &__call-order {
-            display: none;
-        }
+    .page-header__wrapper {
+        margin: 0 25px;
+        display: flex;
+        justify-content: space-between;
     }
 }
+
 // mobile ----------------------------------------------------------------------------
 
 @media (max-width: $mobile-width) {
@@ -150,28 +38,10 @@
         padding-top: 17px;
         padding-bottom: 0;
         max-width: 320px;
-        &__wrapper {
-            margin: 0 16px;
-            padding-top: 0;
-        }
     }
 
-    .details {
-        &__block {
-            display: none;
-        }
-        &__img {
-            width: 38px;
-            height: 38px;
-        }
-    }
-
-    .main-nav {
-        &__tel {
-            margin-right: 0;
-        }
-        &__email {
-            margin-right: 1.5rem;
-        }
+    .page-header__wrapper {
+        margin: 0 16px;
+        padding-top: 0;
     }
 }
