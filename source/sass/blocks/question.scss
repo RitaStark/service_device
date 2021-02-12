@@ -45,6 +45,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 49px;
+    width: 98%;
 
     @include font-ptmono;
 }
@@ -55,7 +56,7 @@
     margin-bottom: 40px;
 
     & textarea {
-        width: 96%;
+        width: 95%;
         height: 154px;
         font-size: 16px;
         color: #ffffff;
@@ -193,6 +194,10 @@ input[type="checkbox"] {
 
     .question-form__image {
         display: none;
+    }
+
+    .question-form__client-data {
+        width: 98%;
     }
 
     .question-form__header {
