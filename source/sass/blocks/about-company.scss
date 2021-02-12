@@ -107,13 +107,13 @@
 
 // mobile ----------------------------------------------------------------------------
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
     .about-company {
         margin-bottom: 65px;
     }
 
     .about-company__wrapper {
-        max-width: 320px;
+        max-width: 767px;
         margin: 0 15px;
         padding-left: 0;
         padding-right: 0;

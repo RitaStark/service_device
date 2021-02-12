@@ -116,7 +116,7 @@
     border: 1px solid #ffffff;
     border-radius: 5px;
 
-    width: 30%;
+    width: 40%;
 
     @include font-roboto;
 }
@@ -211,7 +211,7 @@ input[type="checkbox"] {
 }
 
 // mobile ----------------------------------------------------------------------------
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
     .question-form__wrapper {
         max-width: 320px;
         margin: 0 auto;
@@ -221,26 +221,56 @@ input[type="checkbox"] {
     .question-form__header {
         font-size: 28px;
         line-height: 40px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .question-form__text {
+        margin-right: 15px;
+        margin-left: 15px;
     }
 
     .question-form__data {
         padding-top: 30px;
     }
 
+    .question-form__client-data {
+        max-width: 290px;
+        margin: 0 auto;
+    }
+
     .question-form__ask {
-        margin-top: 0;
+        max-width: 290px;
+        margin: 0 auto;
 
         & textarea {
             width: 92%;
         }
     }
 
+    .question-form__input {
+        width: 100%;
+    }
+
     .question-form__item {
+        width: 100%;
+
         & input[type="text"],
-        input[type="number"] {
-            width: 290px;
+        input[type="tel"] {
+            width: 98%;
             font-size: 16px;
         }
+    }
+
+    .question-form__agreements {
+        max-width: 290px;
+        margin: 0 auto;
+    }
+
+    .question-form__agreements button {
+        width: 100%;
+        padding: 11px 5px;
+        margin-top: 30px;
     }
 
     .question-form__agreements a {
