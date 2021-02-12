@@ -107,13 +107,15 @@
     width: 100%;
 }
 
-.question-form__agreements a {
+.question-form__agreements button {
     text-decoration: none;
     text-transform: uppercase;
+    background-color: #58c2f0;
+    text-align: center;
     color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 5px;
-    padding: 14px 4px 12px 55px;
+
     width: 30%;
 
     @include font-roboto;

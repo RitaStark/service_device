@@ -232,7 +232,7 @@
           <h2 class="question-form__header">Остались вопросы? Задайте их нам!</h2>
           <p class="question-form__text">Мы проконсультируем Вас бесплатно</p>
 
-          <form class="question-form__data" action="#">
+          <form class="question-form__data" action="https://echo.htmlacademy.ru/" method="post">
             <div class="question-form__client-data">
               <div class="question-form__item">
                 <input id="question-form-name" class="question-form__input" id="name" type="text" name="name"
@@ -248,15 +248,15 @@
             </div>
 
             <div class="question-form__item question-form__ask">
-              <textarea id="question-form-text" class="question-form__input" id="type-question"
-                placeholder="Ваш вопрос"></textarea>
+              <textarea id="question-form-text" class="question-form__input" id="type-question" placeholder="Ваш вопрос"
+                name="question"></textarea>
               <label for="question-form-text"></label>
             </div>
 
             <div class="question-form__agreements">
-              <a href="#">задать вопрос</a>
-              <input class="question-form__input question-form__check-mark" id="agree" type="checkbox" name="agree">
-              <label for="agree">Я согласен на обработку <br>персональных данных</label>
+              <button type="submit">задать вопрос</a>
+                <input class="question-form__input question-form__check-mark" id="agree" type="checkbox" name="agree">
+                <label for="agree">Я согласен на обработку <br>персональных данных</label>
             </div>
           </form>
         </div>
