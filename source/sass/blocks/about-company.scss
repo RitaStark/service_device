@@ -113,14 +113,23 @@
     }
 
     .about-company__wrapper {
-        max-width: 767px;
-        margin: 0 15px;
+        max-width: 320px;
+        margin: 0 auto;
         padding-left: 0;
         padding-right: 0;
     }
 
     .about-company__header {
         font-size: 28px;
+        margin-left: 18px;
+    }
+
+    .about-company__button {
+        margin-left: 18px;
+    }
+
+    .about-company__par {
+        margin-left: 18px;
     }
 
     .about-company__year {
