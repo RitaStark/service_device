@@ -53,6 +53,8 @@
         position: relative;
         padding-top: 29px;
         padding-bottom: 29px;
+        width: 320px;
+        margin: 0 auto;
     }
 
     .address-details__header {
@@ -66,6 +68,7 @@
 
     .address-details__list {
         display: none;
+        margin-left: 18px;
     }
 
     .address-details input {
@@ -80,12 +83,16 @@
         }
     }
 
+    .address-details__label {
+        margin-left: 18px;
+    }
+
     .address-details__label::after {
         content: "+";
         font-size: 25px;
         opacity: 0.5;
         position: absolute;
-        left: 266px;
+        left: 283px;
         top: 24px;
     }
 }
