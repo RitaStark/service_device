@@ -13,8 +13,8 @@
 }
 
 .intro__container {
-    margin: 0 30px;
-    padding-top: 166px;
+    margin: 0 72px;
+    padding-top: 281px;
     display: flex;
     align-items: center;
     position: relative;
@@ -23,14 +23,14 @@
 .intro__wrapper {
     max-width: 1555px;
     margin: 0 auto;
-    padding-bottom: 280px;
+    padding-bottom: 317px;
     position: relative;
 }
 
 .intro__picture {
     position: absolute;
-    right: 0;
-    top: 195px;
+    right: -45px;
+    top: 283px;
     z-index: 0;
 }
 
@@ -38,10 +38,10 @@
     position: absolute;
     background-image: url("../images/triangle-header-big.png");
     background-repeat: no-repeat;
-    background-size: 636px 501px;
+    background-size: 558px 486px;
 
     bottom: 0;
-    left: 45px;
+    left: 24px;
     width: 636px;
     height: 501px;
     z-index: -1;
@@ -51,10 +51,10 @@
     position: absolute;
     background-image: url("../images/triangle-header-small.png");
     background-repeat: no-repeat;
-    background-size: 441px 338px;
+    background-size: 327px 278px;
 
-    bottom: 0;
-    left: -49px;
+    bottom: -42px;
+    left: -24px;
     width: 373px;
     height: 338px;
     z-index: -1;
@@ -67,13 +67,14 @@
     font-weight: 700;
     font-size: 73px;
     line-height: 94px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.13em;
     text-align: left;
     font-style: normal;
+    margin-bottom: 30px;
 }
 
 .intro__block {
-    padding-left: 100px;
+    padding-left: 93px;
     position: relative;
     max-width: 680px;
 
@@ -110,7 +111,7 @@
     color: #ffffff;
     background-color: #00b2ff;
     text-decoration: none;
-    padding: 17px 28px;
+    padding: 17px 58px;
     border-radius: 5px;
 }
 
@@ -137,7 +138,7 @@
 
 .intro__advice {
     position: absolute;
-    bottom: -60px;
+    bottom: -24px;
     left: 100px;
 }
 

@@ -5,7 +5,7 @@
 .services__wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    padding-top: 93px;
+    padding-top: 61px;
     padding-bottom: 127px;
 }
 
@@ -16,6 +16,7 @@
     line-height: 51px;
     text-align: left;
     color: #ffffff;
+    margin-bottom: 49px;
 
     @include font-roboto;
 }
@@ -24,6 +25,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 .services__list a {
@@ -47,16 +50,14 @@
         opacity: 0.3;
         top: 0;
         left: 0;
-        width: 358px;
-        height: 674px;
+        width: 371px;
+        height: 622px;
     }
 }
 
 .services__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
     width: 326px;
-    height: 620px;
+    height: 568px;
     padding-top: 53px;
     padding-left: 44px;
     position: relative;
@@ -71,7 +72,7 @@
         background-position: center;
         width: 63px;
         height: 63px;
-        right: 12px;
+        right: 0;
         bottom: 0;
     }
 }

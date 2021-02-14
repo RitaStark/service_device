@@ -5,13 +5,14 @@
 .question-form__wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    padding-top: 96px;
-    padding-bottom: 113px;
+    padding-top: 92px;
+    padding-bottom: 0;
     display: flex;
 }
 
 .question-form__block {
     width: 50%;
+    margin-bottom: -14px;
 }
 
 .question-form__header {
@@ -52,7 +53,7 @@
 
 .question-form__ask {
     flex-basis: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     & textarea {
         width: 95%;
@@ -110,13 +111,14 @@
 .question-form__agreements button {
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #58c2f0;
+    background-color: #00b2ff;
     text-align: center;
     color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 5px;
+    padding: 12px 25px;
 
-    width: 40%;
+    width: 48%;
 
     @include font-roboto;
 }
@@ -137,11 +139,13 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    top: -87px;
+    left: -28px;
 }
 
 .question-form__back-triangle-big {
     position: absolute;
-    bottom: 75px;
+    bottom: 25px;
     left: -146px;
     width: 636px;
     height: 480px;
@@ -154,7 +158,7 @@
 
 .question-form__back-triangle-small {
     position: absolute;
-    bottom: 75px;
+    bottom: 25px;
     left: -146px;
     width: 373px;
     height: 284px;
@@ -203,8 +207,8 @@
         border: 1px solid #ffffff;
         width: 18px;
         height: 18px;
-        left: -58px;
-        top: 0;
+        left: -33px;
+        top: 6px;
     }
 }
 

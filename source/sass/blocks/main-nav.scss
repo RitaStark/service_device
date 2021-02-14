@@ -1,5 +1,5 @@
 .main-nav {
-    margin-right: 80px;
+    margin-right: 0;
     z-index: 2;
 }
 
@@ -8,11 +8,12 @@
     justify-content: flex-end;
     list-style-type: none;
     align-items: center;
+    margin-top: 0;
     z-index: 1;
 }
 
 .main-nav__email {
-    margin-right: 4rem;
+    margin-right: 6rem;
     color: #ffffff;
     position: relative;
     font-weight: 400;
@@ -41,7 +42,7 @@
     border-radius: 5px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 14px 13px;
+    padding: 14px 32px;
     font-size: 14px;
     line-height: 16.41px;
     font-weight: 700;

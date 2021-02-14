@@ -4,7 +4,7 @@
 
 .address-details__header {
     text-transform: uppercase;
-    padding-left: 10px;
+    padding-left: 0;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -17,9 +17,10 @@
 
 .address-details__list {
     list-style-type: none;
+    margin-top: 28px;
     padding-left: 0;
     font-size: 15px;
-    line-height: 25px;
+    line-height: 15px;
     color: #1b2d37;
     opacity: 0.5;
 
