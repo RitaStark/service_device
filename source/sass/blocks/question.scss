@@ -52,7 +52,6 @@
 
 .question-form__ask {
     flex-basis: 100%;
-    margin-top: 40px;
     margin-bottom: 40px;
 
     & textarea {
@@ -136,6 +135,47 @@
 
 .question-form__image {
     width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.question-form__back-triangle-big {
+    position: absolute;
+    bottom: 75px;
+    left: -146px;
+    width: 636px;
+    height: 480px;
+    background-image: url("../images/triangle-big.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 636px ​636px;
+    z-index: -1;
+}
+
+.question-form__back-triangle-small {
+    position: absolute;
+    bottom: 75px;
+    left: -146px;
+    width: 373px;
+    height: 284px;
+    background-image: url("../images/triangle-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 373px ​373px;
+    z-index: -1;
+}
+
+.advantages__img-triangle-small-right {
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+    width: 373px;
+    height: 284px;
+    background-image: url("../images/triangle-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 373px ​373px;
+    z-index: -1;
 }
 
 .question-form__image img {

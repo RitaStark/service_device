@@ -32,32 +32,32 @@
     right: 0;
     top: 195px;
     z-index: 0;
+}
 
-    &::before {
-        content: "";
-        background-image: url("../images/triangle.svg");
-        background-repeat: no-repeat;
-        background-size: 322px 280px;
-        position: absolute;
-        bottom: 20px;
-        left: -21px;
-        width: 322px;
-        height: 280px;
-        z-index: -1;
-    }
+.intro__triangle-big {
+    position: absolute;
+    background-image: url("../images/triangle-header-big.png");
+    background-repeat: no-repeat;
+    background-size: 636px 501px;
 
-    &::after {
-        content: "";
-        background-image: url("../images/triangle.svg");
-        background-repeat: no-repeat;
-        background-size: 549px 474px;
-        position: absolute;
-        bottom: 20px;
-        left: 45px;
-        width: 549px;
-        height: 474px;
-        z-index: -1;
-    }
+    bottom: 0;
+    left: 45px;
+    width: 636px;
+    height: 501px;
+    z-index: -1;
+}
+
+.intro__triangle-small {
+    position: absolute;
+    background-image: url("../images/triangle-header-small.png");
+    background-repeat: no-repeat;
+    background-size: 441px 338px;
+
+    bottom: 0;
+    left: -49px;
+    width: 373px;
+    height: 338px;
+    z-index: -1;
 }
 
 .intro__header {
@@ -216,32 +216,6 @@
         position: absolute;
         right: -192px;
         top: 140px;
-
-        &::before {
-            content: "";
-            background-image: url("../images/triangle.svg");
-            background-repeat: no-repeat;
-            background-size: 254px 216px;
-            position: absolute;
-            bottom: 75px;
-            left: -67px;
-            width: 254px;
-            height: 216px;
-            z-index: -1;
-        }
-
-        &::after {
-            content: "";
-            background-image: url("../images/triangle.svg");
-            background-repeat: no-repeat;
-            background-size: 434px 378px;
-            position: absolute;
-            bottom: 75px;
-            left: -53px;
-            width: 434px;
-            height: 378px;
-            z-index: -1;
-        }
     }
 
     .intro__advice {
@@ -314,34 +288,26 @@
         position: absolute;
         top: 169px;
         right: -8px;
+    }
 
-        &::before {
-            content: "";
-            background-image: url("../images/triangle.svg");
-            background-repeat: no-repeat;
-            background-size: 281px 218px;
-            position: absolute;
-            bottom: -145px;
-            left: 139px;
-            width: 232px;
-            height: 242px;
-            z-index: -1;
-            display: block;
-        }
+    .intro__triangle-big {
+        background-size: 486px 381px;
 
-        &::after {
-            content: "";
-            background-image: url("../images/triangle.svg");
-            background-repeat: no-repeat;
-            background-size: 479px 413px;
-            position: absolute;
-            top: -39px;
-            left: 145px;
-            width: 535px;
-            height: 422px;
-            z-index: -1;
-            display: block;
-        }
+        bottom: -126px;
+        left: 125px;
+        width: 479px;
+        height: 381px;
+        z-index: -1;
+    }
+
+    .intro__triangle-small {
+        background-size: 281px 229px;
+
+        bottom: -184px;
+        left: 146px;
+        width: 281px;
+        height: 281px;
+        z-index: -1;
     }
 
     .intro__img {
