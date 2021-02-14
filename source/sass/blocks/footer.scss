@@ -208,6 +208,10 @@
         display: block;
     }
 
+    .footer-cover {
+        padding-bottom: 0;
+    }
+
     .footer-wrapper {
         margin: 0 auto;
         display: flex;
@@ -222,6 +226,7 @@
 
     .footer-info {
         flex-direction: column;
+        padding-bottom: 33px;
     }
 
     .footer-info__social {
@@ -230,7 +235,7 @@
 
     .footer-info__lifetime {
         padding-bottom: 0;
-        padding-top: 26px;
+        padding-top: 17px;
     }
 
     .footer-list__header {

@@ -10,6 +10,7 @@
     background-attachment: fixed;
     margin-top: -120px;
     z-index: -1;
+    overflow: hidden;
 }
 
 .intro__container {
@@ -190,7 +191,7 @@
         letter-spacing: 0.07em;
         text-align: left;
 
-        margin-top: 126px;
+        margin-top: 139px;
     }
 
     .intro__text {
@@ -204,7 +205,7 @@
     .intro__block {
         position: relative;
         padding-left: 47px;
-        margin-bottom: 95px;
+        margin-bottom: 63px;
 
         &::before {
             width: 33px;
@@ -223,7 +224,7 @@
         position: absolute;
         bottom: 0;
         left: 134px;
-        min-width: 379px;
+        padding: 0;
     }
 
     .intro__info {
@@ -241,6 +242,7 @@
 
     .intro__button {
         min-width: 356px;
+        padding: 17px 20px;
     }
 }
 
@@ -254,7 +256,7 @@
     .intro__wrapper {
         max-width: 320px;
         margin-top: 62px;
-        padding-bottom: 70px;
+        padding-bottom: 47px;
         display: flex;
         flex-direction: column;
     }
@@ -274,6 +276,10 @@
         position: relative;
         z-index: 10;
         margin-top: 280px;
+    }
+
+    .intro__block {
+        margin-bottom: 91px;
     }
 
     .intro__info {
@@ -320,6 +326,7 @@
     .intro__advice {
         left: 0;
         min-width: 284px;
+        padding: 0;
     }
 
     .intro__button {

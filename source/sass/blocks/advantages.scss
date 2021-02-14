@@ -15,6 +15,7 @@
 
 .advantages__header {
     font-size: 24px;
+    font-weight: 400;
     line-height: 34px;
     color: #00b2ff;
     margin-top: 24px;
@@ -30,7 +31,6 @@
     background-color: #ffffff;
 
     margin-bottom: 30px;
-    padding: 27px 42px 70px 44px;
 
     @include font-ptmono;
 
@@ -47,6 +47,13 @@
     &:hover .advantages__icon {
         fill: #ffffff;
     }
+}
+
+.advantages__item-stopwatch,
+.advantages__item-hired,
+.advantages__item-derective,
+.advantages__item-tag {
+    padding: 27px 42px 70px 44px;
 }
 
 .advantages__icon {
@@ -163,13 +170,18 @@
         justify-content: center;
     }
 
+    .advantages__header {
+        margin-top: 0;
+    }
+
     .advantages__item {
         max-width: 258px;
     }
 
     .advantages-wrapper {
-        margin-top: 59px;
+        margin-top: 55px;
         padding-bottom: 58px;
+        padding-top: 0;
     }
 
     .advantages__item-tag {
@@ -196,6 +208,7 @@
         max-width: 767px;
         margin-top: 37px;
         overflow: hidden;
+        padding-bottom: 0;
     }
 
     .advantages {
@@ -206,14 +219,29 @@
     .advantages__list {
         justify-content: center;
         column-gap: 30px;
-        margin-top: 37px;
+        margin-top: 0;
     }
 
     .advantages__item {
         max-width: 258px;
         margin-right: 0;
         margin-left: 0;
-        padding: 25px 18px 38px 23px;
+    }
+
+    .advantages__item-stopwatch {
+        padding: 27px 42px 29px 44px;
+    }
+
+    .advantages__item-hired {
+        padding: 27px 42px 10px 44px;
+    }
+
+    .advantages__item-derective {
+        padding: 17px 26px 55px 44px;
+    }
+
+    .advantages__item-tag {
+        padding: 14px 42px 10px 44px;
     }
 
     .advantages__header {

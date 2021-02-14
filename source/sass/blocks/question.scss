@@ -197,8 +197,8 @@
         background: url("../images/icon-tick.svg") no-repeat;
         background-position: center;
         background-size: 10px 10px;
-        left: -53px;
-        top: 05px;
+        left: -27px;
+        top: 11px;
     }
 
     & + label::after {
@@ -240,12 +240,21 @@ input[type="checkbox"] {
         display: none;
     }
 
+    .question-form__card {
+        max-width: 593px;
+        margin: 0 auto;
+    }
+
     .question-form__client-data {
         width: 98%;
     }
 
     .question-form__header {
         font-size: 32px;
+    }
+
+    .question-form__data {
+        margin: 0 auto;
     }
 
     .question-form__agreements {
@@ -264,7 +273,6 @@ input[type="checkbox"] {
     .question-form__wrapper {
         max-width: 320px;
         margin: 0 auto;
-        padding: 33px 15px 41px 15px;
     }
 
     .question-form__header {
@@ -272,6 +280,7 @@ input[type="checkbox"] {
         line-height: 40px;
         margin-right: 15px;
         margin-left: 15px;
+        margin-bottom: 11px;
     }
 
     .question-form__text {
@@ -280,7 +289,7 @@ input[type="checkbox"] {
     }
 
     .question-form__data {
-        padding-top: 30px;
+        padding-top: 27px;
     }
 
     .question-form__client-data {
@@ -328,15 +337,15 @@ input[type="checkbox"] {
     }
 
     .question-form__agreements label {
-        padding-left: 40px;
-        padding-top: 30px;
+        padding-left: 37px;
+        padding-top: 35px;
         padding-right: 5px;
     }
 
     .question-form__check-mark {
         &:checked + label::before {
-            left: 10px;
-            top: 35px;
+            left: 8px;
+            top: 40px;
         }
 
         & + label::after {
@@ -345,8 +354,8 @@ input[type="checkbox"] {
             border: 1px solid #ffffff;
             width: 18px;
             height: 18px;
-            left: 5px;
-            top: 30px;
+            left: 2px;
+            top: 36px;
         }
     }
 }

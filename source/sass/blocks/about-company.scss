@@ -86,6 +86,7 @@
     .about-company {
         max-width: 720px;
         margin: 0 auto;
+        padding-top: 0;
     }
 
     .about-company__wrapper {
@@ -110,7 +111,7 @@
 
 @media (max-width: $tablet-width) {
     .about-company {
-        margin-bottom: 65px;
+        padding-bottom: 77px;
     }
 
     .about-company__wrapper {
@@ -123,6 +124,7 @@
     .about-company__header {
         font-size: 28px;
         margin-left: 18px;
+        margin-top: 0;
     }
 
     .about-company__button {
@@ -131,6 +133,10 @@
 
     .about-company__par {
         margin-left: 18px;
+    }
+
+    .about-company__par-first {
+        margin-bottom: 36px;
     }
 
     .about-company__year {
