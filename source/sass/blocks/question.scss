@@ -251,6 +251,11 @@ input[type="checkbox"] {
 
     .question-form__header {
         font-size: 32px;
+        padding-left: 3px;
+    }
+
+    .question-form__text {
+        padding-left: 5px;
     }
 
     .question-form__data {
@@ -273,6 +278,7 @@ input[type="checkbox"] {
     .question-form__wrapper {
         max-width: 320px;
         margin: 0 auto;
+        padding: 38px 15px 46px 15px;
     }
 
     .question-form__header {

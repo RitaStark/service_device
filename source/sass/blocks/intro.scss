@@ -177,6 +177,7 @@
     }
 
     .intro__container {
+        max-width: 718px;
         margin: 0 auto;
         padding-top: 88px;
         padding-bottom: 25px;
@@ -243,6 +244,22 @@
     .intro__button {
         min-width: 356px;
         padding: 17px 20px;
+    }
+
+    .intro__triangle-small {
+        background-size: 298px 238px;
+        bottom: -124px;
+        left: -48px;
+        width: 304px;
+        height: 323px;
+    }
+
+    .intro__triangle-big {
+        background-size: 509px 398px;
+        bottom: -144px;
+        left: -41px;
+        width: 636px;
+        height: 501px;
     }
 }
 
