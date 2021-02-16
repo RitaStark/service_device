@@ -14,3 +14,13 @@
     margin-right: 30px;
     margin-left: 30px;
 }
+
+@mixin margin-72-72 {
+    margin-right: 72px;
+    margin-left: 72px;
+}
+
+@mixin margin-0-0 {
+    margin-right: 0;
+    margin-left: 0;
+}

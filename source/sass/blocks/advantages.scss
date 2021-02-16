@@ -1,5 +1,5 @@
 .advantages {
-    max-width: 1170px;
+    max-width: 1314px;
     margin: 0 auto;
 }
 
@@ -11,6 +11,8 @@
     justify-content: center;
     column-gap: 27px;
     margin-top: 0;
+
+    @include margin-72-72;
 }
 
 .advantages__header {
@@ -169,6 +171,8 @@
     .advantages__list {
         justify-content: center;
         column-gap: 27px;
+
+        @include margin-0-0;
     }
 
     .advantages__header {
