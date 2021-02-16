@@ -64,7 +64,6 @@
 .intro__header {
     text-transform: uppercase;
     color: #ffffff;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 73px;
     line-height: 94px;
@@ -72,6 +71,8 @@
     text-align: left;
     font-style: normal;
     margin-bottom: 30px;
+
+    @include font-roboto;
 }
 
 .intro__block {
@@ -91,7 +92,6 @@
 }
 
 .intro__text {
-    font-family: "PT Mono", monospace;
     font-weight: 400;
     font-size: 22px;
     line-height: 34px;
@@ -100,11 +100,12 @@
     text-align: left;
     color: #ffffff;
     margin-bottom: 53px;
+
+    @include font-ptmono;
 }
 
 .intro__button {
     text-transform: uppercase;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 18.75px;
@@ -114,6 +115,8 @@
     text-decoration: none;
     padding: 17px 58px;
     border-radius: 5px;
+
+    @include font-roboto;
 }
 
 .intro__button-mobile {
@@ -353,7 +356,6 @@
     .intro__button-mobile {
         display: block;
         text-transform: uppercase;
-        font-family: "Roboto Condensed", "Arial", sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 18.75px;
@@ -364,5 +366,7 @@
         padding: 17px 0;
         border-radius: 5px;
         max-width: 284px;
+
+        @include font-roboto;
     }
 }

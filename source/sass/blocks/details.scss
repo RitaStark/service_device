@@ -8,21 +8,23 @@
 
 .details__name {
     color: #ffffff;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 25px;
     line-height: 29.3px;
     margin-top: 0;
     margin-bottom: 0;
+
+    @include font-roboto;
 }
 
 .details__tag {
     color: #e5e5e5;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 14.06px;
     margin-top: 0;
+
+    @include font-roboto;
 }
 
 @media (max-width: $tablet-width) {

@@ -47,7 +47,8 @@
     line-height: 16.41px;
     font-weight: 700;
     text-align: center;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+
+    @include font-roboto;
 }
 
 .main-nav__call-order {
