@@ -9,12 +9,12 @@
     padding-top: 92px;
     padding-bottom: 30px;
     display: flex;
+    position: relative;
 }
 
 .question-form__block {
     width: 50%;
     margin-bottom: -14px;
-    position: relative;
 }
 
 .question-form__header {
@@ -161,7 +161,7 @@
 .question-form__right-triangle {
     position: absolute;
     bottom: 0;
-    left: 423px;
+    left: 1024px;
     width: 509px;
     height: 669px;
     background-image: url("../images/triangles-right-ask-form.png");
