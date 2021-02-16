@@ -1,0 +1,15 @@
+.footer-container {
+    margin-top: 65px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+// mobile ----------------------------------------------------------------------------
+
+@media (max-width: $tablet-width) {
+    .footer-container {
+        margin-top: 46px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

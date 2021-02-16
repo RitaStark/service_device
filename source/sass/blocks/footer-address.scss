@@ -1,0 +1,29 @@
+// tablet----------------------------------------------------------------------------
+
+@media (max-width: $desktop-width) {
+    .footer-address {
+        @include margin-top-38;
+    }
+}
+
+// mobile ----------------------------------------------------------------------------
+
+@media (max-width: $tablet-width) {
+    .footer-address {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footer-address__list {
+        display: none;
+    }
+
+    .footer-address input {
+        &:checked ~ .address-details__list {
+            display: block;
+        }
+    }
+}

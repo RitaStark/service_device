@@ -1,0 +1,23 @@
+.footer-wrapper {
+    max-width: 1412px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+// tablet----------------------------------------------------------------------------
+
+@media (max-width: $desktop-width) {
+    .footer-wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .footer-wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

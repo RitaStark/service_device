@@ -1,0 +1,19 @@
+.footer-small {
+    display: none;
+}
+
+// tablet----------------------------------------------------------------------------
+
+@media (max-width: $desktop-width) {
+    .footer-small {
+        display: block;
+    }
+}
+
+// mobile ----------------------------------------------------------------------------
+
+@media (max-width: $tablet-width) {
+    .footer-small {
+        display: block;
+    }
+}
