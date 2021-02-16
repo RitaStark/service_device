@@ -1,5 +1,6 @@
 .question-form {
     background-color: #00b2ff;
+    overflow: hidden;
 }
 
 .question-form__wrapper {
@@ -13,6 +14,7 @@
 .question-form__block {
     width: 50%;
     margin-bottom: -14px;
+    position: relative;
 }
 
 .question-form__header {
@@ -143,43 +145,29 @@
     left: -28px;
 }
 
-.question-form__back-triangle-big {
+.question-form__back-triangle {
     position: absolute;
     bottom: 25px;
-    left: -146px;
-    width: 636px;
-    height: 480px;
-    background-image: url("../images/triangle-big.png");
+    left: -157px;
+    width: 670px;
+    height: 641px;
+    background-image: url("../images/triangles-ask-form.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 636px ​636px;
+    background-size: 670px ​641px;
     z-index: -1;
 }
 
-.question-form__back-triangle-small {
+.question-form__right-triangle {
     position: absolute;
-    bottom: 25px;
-    left: -146px;
-    width: 373px;
-    height: 284px;
-    background-image: url("../images/triangle-small.png");
+    bottom: 0;
+    left: 423px;
+    width: 509px;
+    height: 669px;
+    background-image: url("../images/triangles-right-ask-form.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 373px ​373px;
-    z-index: -1;
-}
-
-.advantages__img-triangle-small-right {
-    position: absolute;
-    bottom: 75px;
-    right: 0;
-    width: 373px;
-    height: 284px;
-    background-image: url("../images/triangle-small.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 373px ​373px;
-    z-index: -1;
+    background-size: 509px 669px;
 }
 
 .question-form__image img {
@@ -270,6 +258,10 @@ input[type="checkbox"] {
         & a {
             padding: 14px 4px 12px 69px;
         }
+    }
+
+    .question-form__right-triangle {
+        display: none;
     }
 }
 
