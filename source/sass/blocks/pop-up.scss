@@ -14,7 +14,7 @@
     }
 }
 
-.pop-up__header {
+.pop-up h2 {
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -27,7 +27,7 @@
     @include font-roboto;
 }
 
-.pop-up__text {
+.pop-up p {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
