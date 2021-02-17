@@ -6,10 +6,12 @@
   var closeButton = document.querySelector('.pop-up__close-icon');
   var overlay = document.querySelector('.intro__overlay');
   var contactForm = document.querySelector('.intro__form .pop-up');
+  var body = document.querySelector('body');
 
   callRequest.addEventListener('click', function () {
     overlay.classList.remove('visually-hidden');
     document.querySelector('.pop-up__input').focus();
+    body.classList.add('no-scroll');
   });
 
   closeButton.addEventListener('click', function () {
@@ -62,3 +64,4 @@
   var questionFormNumber = document.querySelector('.question-form__input--tel');
   new Inputmask('\\+7 \\(999\\)-9999999').mask(questionFormNumber);
 })();
+
