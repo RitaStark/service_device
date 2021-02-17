@@ -31,7 +31,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__email">
-            <a href="#"><img src="images/icon-mail.png" alt=" иконка телефона" width="19" height="14"></a>
+            <a href="#"><img src="images/icon-mail.png" alt="иконка телефона" width="19" height="14"></a>
             <span class="main-nav__email-none">info@sd.ru</span>
           </li>
           <li class="main-nav__tel">
@@ -198,61 +198,65 @@
 
     <section class="services">
       <div class="services__wrapper">
-        <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
-        <div class="services__list">
-          <a class="services__production-link" href="#">
-            <div class="services__item services__production">Производство <br>печатных плат</div>
-          </a>
-          <a class="services__installation-link" href="#">
-            <div class="services__item services__installation">Монтаж печатных <br>плат</div>
-          </a>
-          <a class="services__accessories-link" href="#">
-            <div class="services__item services__accessories">Комплектующие <br>для светотехники</div>
-          </a>
+        <div class="services__container">
+          <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
+          <div class="services__list">
+            <a class="services__production-link" href="#">
+              <div class="services__item services__production">Производство <br>печатных плат</div>
+            </a>
+            <a class="services__installation-link" href="#">
+              <div class="services__item services__installation">Монтаж печатных <br>плат</div>
+            </a>
+            <a class="services__accessories-link" href="#">
+              <div class="services__item services__accessories">Комплектующие <br>для светотехники</div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="question" class="question-form">
       <div class="question-form__wrapper">
-        <div class="question-form__image question-form__block">
-          <picture>
-            <source type="image/webp" media="(min-width: 1025px)" srcset="images/paper_airplane.webp 1x, images/paper_airplane@2x.webp 2x">
-            <!-- 1х: 510px; 2x: 1020px -->
-            <img src="images/paper_airplane.png" srcset="images/paper_airplane@2x.png" alt="Изображение бумажного самолетика">
-          </picture>
-          <div class="question-form__back-triangle"></div>
-        </div>
+        <div class="question-form__container">
+          <div class="question-form__image question-form__block">
+            <picture>
+              <source type="image/webp" media="(min-width: 1025px)" srcset="images/paper_airplane.webp 1x, images/paper_airplane@2x.webp 2x">
+              <!-- 1х: 510px; 2x: 1020px -->
+              <img src="images/paper_airplane.png" srcset="images/paper_airplane@2x.png" alt="Изображение бумажного самолетика">
+            </picture>
+            <div class="question-form__back-triangle"></div>
+          </div>
 
-        <div class="question-form__card question-form_block">
-          <h2 class="question-form__header">Остались вопросы? Задайте их нам!</h2>
-          <p class="question-form__text">Мы проконсультируем Вас бесплатно</p>
+          <div class="question-form__card question-form_block">
+            <h2 class="question-form__header">Остались вопросы? Задайте их нам!</h2>
+            <p class="question-form__text">Мы проконсультируем Вас бесплатно</p>
 
-          <form class="question-form__data" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="question-form__client-data">
-              <div class="question-form__item">
-                <input id="question-form-name" class="question-form__input" type="text" name="name" placeholder="Имя" required="">
-                <label for="question-form-name"></label>
+            <form class="question-form__data" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="question-form__client-data">
+                <div class="question-form__item">
+                  <input id="question-form-name" class="question-form__input" type="text" name="name" placeholder="Имя" required="">
+                  <label for="question-form-name"></label>
+                </div>
+
+                <div class="question-form__item">
+                  <input id="question-form-phone" class="question-form__input question-form__input--tel" type="tel" name="phone-number" placeholder="Телефон" required="">
+                  <label for="question-form-phone"></label>
+                </div>
               </div>
 
-              <div class="question-form__item">
-                <input id="question-form-phone" class="question-form__input question-form__input--tel" type="tel" name="phone-number" placeholder="Телефон" required="">
-                <label for="question-form-phone"></label>
+              <div class="question-form__item question-form__ask">
+                <textarea id="question-form-text" class="question-form__input" placeholder="Ваш вопрос" name="question" required=""></textarea>
+                <label for="question-form-text"></label>
               </div>
-            </div>
 
-            <div class="question-form__item question-form__ask">
-              <textarea id="question-form-text" class="question-form__input" placeholder="Ваш вопрос" name="question" required=""></textarea>
-              <label for="question-form-text"></label>
-            </div>
-
-            <div class="question-form__agreements">
-              <button type="submit">задать вопрос
-                </button><input class="question-form__input question-form__check-mark" id="agree" type="checkbox" name="agree">
-                <label for="agree">Я согласен на обработку <br>персональных данных</label>
-            </div>
-          </form>
-          <div class="question-form__right-triangle"></div>
+              <div class="question-form__agreements">
+                <button type="submit">задать вопрос
+                  </button><input class="question-form__input question-form__check-mark" id="agree" type="checkbox" name="agree">
+                  <label for="agree">Я согласен на обработку <br>персональных данных</label>
+              </div>
+            </form>
+            <div class="question-form__right-triangle"></div>
+          </div>
         </div>
       </div>
 
@@ -280,21 +284,21 @@
               <ul class="social-info__list">
                 <li class="social-info__item">
                   <a href="#" class="social-info__link" target="_blank">
-                    <svg class="social-info__link--fb">
+                    <svg class="social-info__fb">
                       <use xlink:href="images/sprite.svg#fb"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-info__item">
                   <a href="#" class="social-info__link" target="_blank">
-                    <svg class="social-info__link--ok">
+                    <svg class="social-info__ok">
                       <use xlink:href="images/sprite.svg#ok"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-info__item">
                   <a href="#" class="social-info__link" target="_blank">
-                    <svg class="social-info__link--inst">
+                    <svg class="social-info__inst">
                       <use xlink:href="images/sprite.svg#inst"></use>
                     </svg>
                   </a>
@@ -376,21 +380,21 @@
               <ul class="social-info__list">
                 <li class="social-info__item">
                   <a href="#" class="social-info__link" target="_blank">
-                    <svg class="social-info__link--fb">
+                    <svg class="social-info__fb">
                       <use xlink:href="images/sprite.svg#fb"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-info__item">
                   <a href="#" class="social-info__link" target="_blank">
-                    <svg class="social-info__link--ok">
+                    <svg class="social-info__ok">
                       <use xlink:href="images/sprite.svg#ok"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-info__item">
                   <a href="#" class="social-info__link" target="_blank">
-                    <svg class="social-info__link--inst">
+                    <svg class="social-info__inst">
                       <use xlink:href="images/sprite.svg#inst"></use>
                     </svg>
                   </a>

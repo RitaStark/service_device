@@ -23,6 +23,9 @@ html {
 body {
   margin: 0; }
 
+.no-scroll {
+  overflow: hidden; }
+
 .page-header {
   max-width: 1555px;
   margin: 0 auto;
@@ -946,10 +949,14 @@ body {
   background-color: #1b2d37; }
 
 .services__wrapper {
-  max-width: 1170px;
+  max-width: 1314px;
   margin: 0 auto;
   padding-top: 61px;
   padding-bottom: 127px; }
+
+.services__container {
+  margin-right: 72px;
+  margin-left: 72px; }
 
 .services__header {
   font-size: 36px;
@@ -1033,6 +1040,9 @@ body {
   .services__wrapper {
     max-width: 767px;
     margin: 0 auto; }
+  .services__container {
+    margin-right: 0;
+    margin-left: 0; }
   .services__header {
     font-size: 32px;
     margin-left: 37px;
@@ -1080,6 +1090,9 @@ body {
     margin: 0 auto;
     padding-top: 43px;
     padding-bottom: 64px; }
+  .services__container {
+    margin-right: 0;
+    margin-left: 0; }
   .services__header {
     font-size: 28px;
     margin-top: 0;
@@ -1118,14 +1131,18 @@ body {
   overflow: hidden; }
 
 .question-form__wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
+  max-width: 1314px;
+  margin: 0 auto; }
+
+.question-form__container {
   padding-top: 92px;
   padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  margin-right: 72px;
+  margin-left: 72px; }
 
 .question-form__block {
   width: 50%;
@@ -1347,6 +1364,9 @@ input[type="checkbox"] {
     max-width: 770px;
     margin: 0 auto;
     padding: 83px 63px 103px 63px; }
+  .question-form__container {
+    margin-right: 0;
+    margin-left: 0; }
   .question-form__image {
     display: none; }
   .question-form__card {
@@ -1440,15 +1460,18 @@ input[type="checkbox"] {
 .social-info__link {
   text-decoration: none;
   padding-right: 1rem; }
-  .social-info__link--fb {
-    width: 27px;
-    height: 27px; }
-  .social-info__link--ok {
-    width: 27px;
-    height: 26px; }
-  .social-info__link--inst {
-    width: 27px;
-    height: 26px; }
+
+.social-info__fb {
+  width: 27px;
+  height: 27px; }
+
+.social-info__ok {
+  width: 27px;
+  height: 26px; }
+
+.social-info__inst {
+  width: 27px;
+  height: 26px; }
 
 @media (max-width: 1023px) {
   .social-info__list {

@@ -4,12 +4,17 @@
 }
 
 .question-form__wrapper {
-    max-width: 1170px;
+    max-width: 1314px;
     margin: 0 auto;
+}
+
+.question-form__container {
     padding-top: 92px;
     padding-bottom: 30px;
     display: flex;
     position: relative;
+
+    @include margin-72-72;
 }
 
 .question-form__block {
@@ -222,6 +227,10 @@ input[type="checkbox"] {
         max-width: 770px;
         margin: 0 auto;
         padding: 83px 63px 103px 63px;
+    }
+
+    .question-form__container {
+        @include margin-0-0;
     }
 
     .question-form__image {

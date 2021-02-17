@@ -3,10 +3,14 @@
 }
 
 .services__wrapper {
-    max-width: 1170px;
+    max-width: 1314px;
     margin: 0 auto;
     padding-top: 61px;
     padding-bottom: 127px;
+}
+
+.services__container {
+    @include margin-72-72;
 }
 
 .services__header {
@@ -108,6 +112,10 @@
         margin: 0 auto;
     }
 
+    .services__container {
+        @include margin-0-0;
+    }
+
     .services__header {
         font-size: 32px;
         margin-left: 37px;
@@ -178,6 +186,10 @@
         margin: 0 auto;
         padding-top: 43px;
         padding-bottom: 64px;
+    }
+
+    .services__container {
+        @include margin-0-0;
     }
 
     .services__header {
