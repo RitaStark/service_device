@@ -16,16 +16,19 @@
 
   closeButton.addEventListener('click', function () {
     overlay.classList.add('visually-hidden');
+    body.classList.remove('no-scroll');
   });
 
 
   overlay.addEventListener('click', function () {
     overlay.classList.add('visually-hidden');
+    body.classList.remove('no-scroll');
   });
 
   document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       overlay.classList.add('visually-hidden');
+      body.classList.remove('no-scroll');
     }
   });
 
