@@ -477,11 +477,13 @@ body {
   left: 484px;
   width: 723px;
   height: 700px;
-  background-image: url("../images/triangle-big-advantages.png");
+  background-image: url("../images/left-triangle.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 636px ​640px;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 .advantages__big-triangle-left {
   position: absolute;
@@ -489,13 +491,11 @@ body {
   left: -321px;
   width: 723px;
   height: 700px;
-  background-image: url("../images/triangle-big-advantages.png");
+  background-image: url("../images/left-triangle.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 636px ​640px;
-  z-index: -1;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  z-index: -1; }
 
 @media (max-width: 1023px) {
   .advantages__big-triangle-center {
@@ -552,16 +552,16 @@ body {
     margin-top: 0; }
   .advantages__item {
     max-width: 258px;
-    margin-right: 0;
-    margin-left: 0; }
+    margin-right: 15px;
+    margin-left: 15px; }
   .advantages__item-stopwatch {
-    padding: 27px 42px 29px 44px; }
+    padding: 27px 14px 29px 26px; }
   .advantages__item-hired {
-    padding: 27px 42px 10px 44px; }
+    padding: 27px 14px 10px 26px; }
   .advantages__item-derective {
-    padding: 17px 26px 55px 44px; }
+    padding: 17px 14px 55px 26px; }
   .advantages__item-tag {
-    padding: 14px 42px 10px 44px; }
+    padding: 14px 14px 10px 26px; }
   .advantages__header {
     font-size: 20px; } }
 
@@ -661,7 +661,7 @@ body {
   .about-company {
     padding-bottom: 77px; }
   .about-company__wrapper {
-    max-width: 320px;
+    max-width: 290px;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0; }
