@@ -173,6 +173,8 @@ body {
 .footer-logo__block {
   margin-left: 15px;
   margin-top: 5px; }
+  .footer-logo__block:hover {
+    opacity: 0.5; }
 
 .footer-list {
   display: -webkit-box;
@@ -226,6 +228,8 @@ body {
 
 .footer-list__item {
   padding-bottom: 0; }
+  .footer-list__item:hover {
+    opacity: 0.5; }
 
 .footer-list__link {
   text-decoration: none;
@@ -406,7 +410,7 @@ body {
     background-color: #00b2ff;
     cursor: pointer;
     color: #ffffff; }
-  .advantages__item:hover .advantages__header {
+  .advantages__item:hover h2 {
     color: #ffffff; }
   .advantages__item:hover .advantages__icon {
     fill: #ffffff; }
@@ -605,6 +609,10 @@ body {
   padding: 11px 50px 11px 50px;
   margin-top: 43px;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
+  .about-company__button:hover {
+    background-color: #00b2ff;
+    color: #ffffff;
+    opacity: 0.8; }
 
 .about-company__info {
   background-image: url("../images/year.jpg");
@@ -762,6 +770,8 @@ body {
   padding: 17px 58px;
   border-radius: 5px;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
+  .intro__button:hover {
+    opacity: 0.5; }
 
 .intro__button-mobile {
   display: none; }
@@ -944,7 +954,10 @@ body {
     padding: 17px 0;
     border-radius: 5px;
     max-width: 284px;
-    font-family: "Roboto Condensed", "Arial", sans-serif; } }
+    font-family: "Roboto Condensed", "Arial", sans-serif; }
+    .intro__button-mobile:hover {
+      background-color: #12445a;
+      opacity: 0.8; } }
 
 .services {
   background-color: #1b2d37; }
@@ -1007,7 +1020,7 @@ body {
     height: 622px; }
 
 .services__item {
-  width: 326px;
+  width: 324px;
   height: 568px;
   padding-top: 53px;
   padding-left: 44px;
@@ -1024,6 +1037,8 @@ body {
     height: 63px;
     right: 0;
     bottom: 0; }
+  .services__item:hover {
+    outline: 1px solid #00b2ff; }
 
 .services__production-link::before {
   background-image: url("../images/product1_desktop.png"); }
@@ -1263,6 +1278,7 @@ body {
   width: 100%; }
 
 .question-form__agreements button {
+  cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #00b2ff;
@@ -1273,6 +1289,8 @@ body {
   padding: 12px 25px;
   width: 48%;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
+  .question-form__agreements button:hover {
+    opacity: 0.5; }
 
 .question-form__agreements p {
   padding-right: 50px;
@@ -1283,6 +1301,8 @@ body {
 .question-form__agreements label {
   position: relative;
   cursor: pointer; }
+  .question-form__agreements label:hover {
+    opacity: 0.5; }
 
 .question-form__image {
   width: 100%;
@@ -1453,6 +1473,9 @@ input[type="checkbox"] {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-top: 49px; }
+
+.social-info__item:hover {
+  opacity: 0.5; }
 
 .social-info__link {
   text-decoration: none;
@@ -1754,6 +1777,10 @@ input[type="checkbox"] {
   font-weight: 700;
   text-align: center;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
+  .main-nav__call:hover {
+    border: 1px solid #00b2ff;
+    color: #00b2ff;
+    opacity: 0.5; }
 
 .main-nav__call-order {
   min-width: 170px; }

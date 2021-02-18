@@ -100,6 +100,10 @@
     border-radius: 5px;
 
     @include font-roboto;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .intro__button-mobile {
@@ -339,5 +343,10 @@
         max-width: 284px;
 
         @include font-roboto;
+
+        &:hover {
+            background-color: #12445a;
+            opacity: 0.8;
+        }
     }
 }

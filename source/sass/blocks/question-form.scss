@@ -111,6 +111,7 @@
 }
 
 .question-form__agreements button {
+    cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     background-color: #00b2ff;
@@ -119,10 +120,13 @@
     border: 1px solid #ffffff;
     border-radius: 5px;
     padding: 12px 25px;
-
     width: 48%;
 
     @include font-roboto;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .question-form__agreements p {
@@ -135,6 +139,10 @@
 .question-form__agreements label {
     position: relative;
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .question-form__image {

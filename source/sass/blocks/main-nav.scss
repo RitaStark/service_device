@@ -49,6 +49,12 @@
     text-align: center;
 
     @include font-roboto;
+
+    &:hover {
+        border: 1px solid #00b2ff;
+        color: #00b2ff;
+        opacity: 0.5;
+    }
 }
 
 .main-nav__call-order {

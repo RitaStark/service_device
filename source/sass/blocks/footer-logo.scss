@@ -28,4 +28,8 @@
 .footer-logo__block {
     margin-left: 15px;
     margin-top: 5px;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }

@@ -50,6 +50,12 @@
     margin-top: 43px;
 
     @include font-roboto;
+
+    &:hover {
+        background-color: #00b2ff;
+        color: #ffffff;
+        opacity: 0.8;
+    }
 }
 
 .about-company__info {

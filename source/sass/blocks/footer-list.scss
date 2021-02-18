@@ -47,6 +47,10 @@
 
 .footer-list__item {
     padding-bottom: 0;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .footer-list__link {

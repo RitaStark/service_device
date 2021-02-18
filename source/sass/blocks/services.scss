@@ -61,7 +61,7 @@
 }
 
 .services__item {
-    width: 326px;
+    width: 324px;
     height: 568px;
     padding-top: 53px;
     padding-left: 44px;
@@ -79,6 +79,10 @@
         height: 63px;
         right: 0;
         bottom: 0;
+    }
+
+    &:hover {
+        outline: 1px solid #00b2ff;
     }
 }
 

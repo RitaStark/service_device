@@ -6,6 +6,12 @@
     margin-top: 49px;
 }
 
+.social-info__item {
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
 .social-info__link {
     text-decoration: none;
     padding-right: 1rem;
