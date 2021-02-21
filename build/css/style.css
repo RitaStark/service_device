@@ -76,7 +76,10 @@ body {
     max-width: 767px; }
   .page-header__wrapper {
     margin: 0 16px;
-    padding-top: 0; } }
+    padding-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .footer-container {
   margin-top: 65px;
@@ -1787,6 +1790,11 @@ input[type="checkbox"] {
   font-size: 16px;
   line-height: 18px;
   font-family: "PT Mono", "Droid Sans Mono", monospace; }
+  .main-nav__email a {
+    display: block;
+    padding-right: 104px;
+    position: absolute;
+    right: 3px; }
 
 .main-nav__tel {
   margin-right: 2rem;
@@ -1795,7 +1803,13 @@ input[type="checkbox"] {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  position: relative;
   font-family: "PT Mono", "Droid Sans Mono", monospace; }
+  .main-nav__tel a {
+    display: block;
+    padding-right: 169px;
+    position: absolute;
+    right: 3px; }
 
 .main-nav__call {
   cursor: pointer;
@@ -1826,15 +1840,16 @@ input[type="checkbox"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
+    padding-top: 0; }
   .main-nav__email {
-    margin-right: 2rem; }
+    margin-right: 3rem; }
     .main-nav__email::before {
       width: 25px;
       height: 19px;
       background-repeat: no-repeat; }
+    .main-nav__email a {
+      right: 0;
+      padding-right: 0; }
   .main-nav__email-none {
     display: none; }
   .main-nav__tel {
@@ -1846,6 +1861,8 @@ input[type="checkbox"] {
       width: 24px;
       height: 24px;
       background-repeat: no-repeat; }
+    .main-nav__tel a {
+      padding-right: 0; }
   .main-nav__call {
     display: none; }
   .main-nav__call-order {
@@ -1855,7 +1872,7 @@ input[type="checkbox"] {
   .main-nav__tel {
     margin-right: 0; }
   .main-nav__email {
-    margin-right: 1.5rem; } }
+    margin-right: 3rem; } }
 
 .details {
   display: -webkit-box;

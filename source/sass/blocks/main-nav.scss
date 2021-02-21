@@ -21,6 +21,13 @@
     line-height: 18px;
 
     @include font-ptmono;
+
+    & a {
+        display: block;
+        padding-right: 104px;
+        position: absolute;
+        right: 3px;
+    }
 }
 
 .main-nav__tel {
@@ -30,8 +37,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
+    position: relative;
 
     @include font-ptmono;
+
+    & a {
+        display: block;
+        padding-right: 169px;
+        position: absolute;
+        right: 3px;
+    }
 }
 
 .main-nav__call {
@@ -68,16 +83,21 @@
 
     .main-nav__list {
         display: flex;
-        justify-content: flex-end;
+        padding-top: 0;
     }
 
     .main-nav__email {
-        margin-right: 2rem;
+        margin-right: 3rem;
 
         &::before {
             width: 25px;
             height: 19px;
             background-repeat: no-repeat;
+        }
+
+        & a {
+            right: 0;
+            padding-right: 0;
         }
     }
 
@@ -98,6 +118,10 @@
             height: 24px;
             background-repeat: no-repeat;
         }
+
+        & a {
+            padding-right: 0;
+        }
     }
 
     .main-nav__call {
@@ -115,6 +139,6 @@
     }
 
     .main-nav__email {
-        margin-right: 1.5rem;
+        margin-right: 3rem;
     }
 }
