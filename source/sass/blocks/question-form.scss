@@ -58,13 +58,14 @@
     flex-basis: 100%;
 
     & textarea {
-        width: 96%;
+        width: 100%;
         height: 154px;
         font-size: 16px;
         color: #ffffff;
         resize: vertical;
         padding-left: 20px;
         padding-top: 20px;
+        border: none;
 
         &::placeholder {
             padding-left: 0;
@@ -83,6 +84,7 @@
         color: #ffffff;
         border: none;
         background-color: #58c2f0;
+        padding-left: 20px;
     }
 
     & label {
@@ -95,7 +97,6 @@
     height: 50px;
 
     &::placeholder {
-        padding-left: 20px;
         color: #ffffff;
         font-size: 16px;
 
@@ -105,7 +106,6 @@
 
 .question-form__agreements {
     display: flex;
-    // flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     color: #ffffff;
@@ -279,12 +279,6 @@ input[type="checkbox"] {
         }
     }
 
-    .question-form__ask {
-        & textarea {
-            width: 97%;
-        }
-    }
-
     .question-form__right-triangle {
         display: none;
     }
@@ -345,7 +339,7 @@ input[type="checkbox"] {
 
         & input[type="text"],
         input[type="tel"] {
-            width: 100%;
+            width: 96%;
             font-size: 16px;
         }
     }
