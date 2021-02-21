@@ -13,8 +13,6 @@
 
     width: 100%;
     margin: 0 auto;
-
-    // @include margin-72-72;
 }
 
 .advantages__item h2 {
@@ -167,24 +165,21 @@
     }
 
     .advantages {
-        max-width: 720px;
         margin: 0 auto;
     }
 
     .advantages__list {
         width: 95%;
-        justify-content: center;
+        justify-content: space-between;
         column-gap: 27px;
+    }
 
-        // @include margin-72-72;
+    .advantages__item {
+        width: 36%;
     }
 
     .advantages__header {
         margin-top: 0;
-    }
-
-    .advantages__item {
-        // max-width: 258px;
     }
 
     .advantages-wrapper {
@@ -233,8 +228,6 @@
 
     .advantages__item {
         width: 100%;
-        // margin-right: 15px;
-        // margin-left: 15px;
     }
 
     .advantages__item-stopwatch {
