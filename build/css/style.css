@@ -1789,7 +1789,7 @@ input[type="checkbox"] {
   font-family: "PT Mono", "Droid Sans Mono", monospace; }
 
 .main-nav__tel {
-  margin-right: 3rem;
+  margin-right: 2rem;
   color: #ffffff;
   min-width: 160px;
   font-weight: 400;
