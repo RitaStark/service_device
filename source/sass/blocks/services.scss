@@ -86,6 +86,11 @@
     }
 }
 
+.services__item p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .services__production-link {
     &::before {
         background-image: url("../images/product1_desktop.png");

@@ -130,19 +130,25 @@
 }
 
 .question-form__agreements p {
-    padding-right: 50px;
+    padding-right: 16px;
     line-height: 16px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .question-form__agreements label {
     position: relative;
     cursor: pointer;
+    margin-left: 40px;
 
     &:hover {
         opacity: 0.5;
     }
+}
+
+.question-form__agree-text {
+    margin-top: 7px;
+    margin-left: 20px;
 }
 
 .question-form__image {
@@ -203,8 +209,8 @@
         border: 1px solid #ffffff;
         width: 18px;
         height: 18px;
-        left: -33px;
-        top: 6px;
+        left: -27px;
+        top: 9px;
     }
 }
 
@@ -264,7 +270,7 @@ input[type="checkbox"] {
 
     .question-form__agreements {
         & label {
-            padding-right: 38px;
+            padding-right: 0;
         }
 
         & a {
@@ -347,9 +353,14 @@ input[type="checkbox"] {
     }
 
     .question-form__agreements label {
-        padding-left: 37px;
+        padding-left: 0;
+        margin-left: 0;
         padding-top: 35px;
         padding-right: 5px;
+    }
+
+    .question-form__agree-text {
+        margin-top: 0;
     }
 
     .question-form__check-mark {
