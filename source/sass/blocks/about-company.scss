@@ -1,7 +1,7 @@
 .about-company {
     max-width: 1314px;
     margin: 0 auto;
-    padding-bottom: 68px;
+    padding-bottom: 78px;
     padding-top: 41px;
 }
 
@@ -61,26 +61,26 @@
 .about-company__info {
     background-image: url("../images/year.jpg");
     background-repeat: no-repeat;
-    background-size: 113px 303px;
+    background-size: 118px 328px;
 
     width: 113px;
-    height: 281px;
+    height: 328px;
     position: absolute;
-    top: 2px;
-    left: 1px;
+    top: 11px;
+    left: 5px;
 }
 
 .about-company__year {
     transform: rotate(-90deg);
     font-weight: bold;
-    font-size: 128px;
+    font-size: 149px;
     line-height: 120px;
     background: #ffffff;
     mix-blend-mode: lighten;
 
     position: absolute;
-    top: 82px;
-    left: -87px;
+    top: 116px;
+    left: -105px;
 
     @include font-roboto;
 }
@@ -92,7 +92,7 @@
 // tablet----------------------------------------------------------------------------
 @media (max-width: $desktop-width) {
     .about-company {
-        max-width: 720px;
+        max-width: 1023px;
         margin: 0 auto;
         padding-top: 0;
     }
@@ -100,8 +100,9 @@
     .about-company__wrapper {
         padding-left: 138px;
         padding-right: 44px;
-
-        @include margin-0-0;
+        margin-left: 18px;
+        margin-right: 0;
+        max-width: 95%;
     }
 
     .about-company__header {
@@ -115,6 +116,22 @@
     .about-company__tablet-text {
         display: inline;
     }
+
+    .about-company__info {
+        background-size: 118px 293px;
+
+        width: 113px;
+        height: 293px;
+        top: 11px;
+        left: 5px;
+    }
+
+    .about-company__year {
+        font-size: 133px;
+
+        top: 98px;
+        left: -88px;
+    }
 }
 
 // mobile ----------------------------------------------------------------------------
@@ -122,10 +139,13 @@
 @media (max-width: $tablet-width) {
     .about-company {
         padding-bottom: 77px;
+        margin: 0 auto;
+
+        @include max-width-767;
     }
 
     .about-company__wrapper {
-        max-width: 290px;
+        max-width: 95%;
         margin: 0 auto;
         padding-left: 0;
         padding-right: 0;
