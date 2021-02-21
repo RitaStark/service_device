@@ -97,7 +97,7 @@
 
         & a {
             right: 0;
-            padding-right: 0;
+            padding: 5px 5px;
         }
     }
 
@@ -120,7 +120,7 @@
         }
 
         & a {
-            padding-right: 0;
+            padding: 5px 5px;
         }
     }
 
@@ -136,9 +136,17 @@
 @media (max-width: $tablet-width) {
     .main-nav__tel {
         margin-right: 0;
+
+        & a {
+            padding: 5px 5px;
+        }
     }
 
     .main-nav__email {
         margin-right: 3rem;
+
+        & a {
+            padding: 5px 5px;
+        }
     }
 }

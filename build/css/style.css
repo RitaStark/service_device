@@ -1849,7 +1849,7 @@ input[type="checkbox"] {
       background-repeat: no-repeat; }
     .main-nav__email a {
       right: 0;
-      padding-right: 0; }
+      padding: 5px 5px; }
   .main-nav__email-none {
     display: none; }
   .main-nav__tel {
@@ -1862,7 +1862,7 @@ input[type="checkbox"] {
       height: 24px;
       background-repeat: no-repeat; }
     .main-nav__tel a {
-      padding-right: 0; }
+      padding: 5px 5px; }
   .main-nav__call {
     display: none; }
   .main-nav__call-order {
@@ -1871,8 +1871,12 @@ input[type="checkbox"] {
 @media (max-width: 767px) {
   .main-nav__tel {
     margin-right: 0; }
+    .main-nav__tel a {
+      padding: 5px 5px; }
   .main-nav__email {
-    margin-right: 3rem; } }
+    margin-right: 3rem; }
+    .main-nav__email a {
+      padding: 5px 5px; } }
 
 .details {
   display: -webkit-box;
