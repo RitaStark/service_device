@@ -606,6 +606,7 @@ body {
   border-radius: 5px;
   padding: 11px 50px 11px 50px;
   margin-top: 43px;
+  cursor: auto;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
   .about-company__button:hover {
     background-color: #00b2ff;
