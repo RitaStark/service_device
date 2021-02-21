@@ -974,7 +974,6 @@ body {
   text-align: left;
   color: #ffffff;
   margin-bottom: 49px;
-  max-width: 781px;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
 .services__list {
@@ -983,15 +982,16 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
   row-gap: 30px; }
 
 .services__list a {
+  width: 31%;
   text-decoration: none;
   font-size: 20px;
   font-style: normal;
@@ -1010,16 +1010,9 @@ body {
     opacity: 0.3;
     top: 0;
     left: 0;
-    width: 371px;
+    width: 100%;
     height: 622px; }
-
-.services__item {
-  width: 324px;
-  height: 568px;
-  padding-top: 53px;
-  padding-left: 44px;
-  position: relative; }
-  .services__item::after {
+  .services__list a::after {
     content: "";
     position: absolute;
     background-color: #00b2ff;
@@ -1031,6 +1024,12 @@ body {
     height: 63px;
     right: 0;
     bottom: 0; }
+
+.services__item {
+  height: 568px;
+  padding-top: 53px;
+  padding-left: 44px;
+  position: relative; }
   .services__item:hover {
     outline: 1px solid #00b2ff; }
 
@@ -1052,26 +1051,28 @@ body {
 
 @media (max-width: 1023px) {
   .services__wrapper {
-    max-width: 767px;
-    margin: 0 auto; }
+    max-width: 767px; }
   .services__container {
-    margin-right: 0;
-    margin-left: 0; }
+    max-width: 715px;
+    margin: 0 auto; }
   .services__container h2 {
     font-size: 32px;
-    margin-left: 37px;
+    margin-left: 0;
     margin-right: 25px; }
   .services__list {
-    margin-left: 17px;
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     overflow: hidden; }
   .services__list a {
-    max-width: 715px;
+    width: 100%;
     position: relative; }
     .services__list a::before {
       content: "";
@@ -1081,16 +1082,16 @@ body {
       opacity: 0.3;
       top: 0;
       left: 0;
-      width: 715px;
+      width: 100%;
       height: 256px; }
+    .services__list a::after {
+      right: 0;
+      bottom: 0; }
   .services__item {
     width: 671px;
     height: 210px;
     padding-top: 46px;
     padding-left: 44px; }
-    .services__item::after {
-      right: 0;
-      bottom: 0; }
   .services__production-link::before {
     background-image: url("../images/product1_tablet.png"); }
   .services__installation-link::before {
@@ -1100,23 +1101,23 @@ body {
 
 @media (max-width: 767px) {
   .services__wrapper {
-    max-width: 320px;
+    max-width: 767px;
     margin: 0 auto;
     padding-top: 43px;
     padding-bottom: 64px; }
   .services__container {
-    margin-right: 0;
-    margin-left: 0; }
+    max-width: 95%;
+    margin: 0 auto; }
   .services__container h2 {
     font-size: 28px;
     margin-top: 0;
     line-height: 43px;
     margin-bottom: 37px;
-    margin-left: 17px; }
+    margin-left: 0; }
   .services__list {
     margin-left: 0; }
   .services__list a {
-    max-width: 290px;
+    width: 100%;
     position: relative; }
     .services__list a::before {
       content: "";
@@ -1126,7 +1127,7 @@ body {
       opacity: 0.3;
       top: 0;
       left: 0;
-      width: 290px;
+      width: 100%;
       height: 256px; }
   .services__item {
     max-width: 255px;

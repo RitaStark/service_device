@@ -21,7 +21,6 @@
     text-align: left;
     color: #ffffff;
     margin-bottom: 49px;
-    max-width: 781px;
 
     @include font-roboto;
 }
@@ -29,12 +28,14 @@
 .services__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 30px;
     row-gap: 30px;
 }
 
 .services__list a {
+    width: 31%;
+
     text-decoration: none;
     font-size: 20px;
     font-style: normal;
@@ -55,17 +56,9 @@
         opacity: 0.3;
         top: 0;
         left: 0;
-        width: 371px;
+        width: 100%;
         height: 622px;
     }
-}
-
-.services__item {
-    width: 324px;
-    height: 568px;
-    padding-top: 53px;
-    padding-left: 44px;
-    position: relative;
 
     &::after {
         content: "";
@@ -80,6 +73,13 @@
         right: 0;
         bottom: 0;
     }
+}
+
+.services__item {
+    height: 568px;
+    padding-top: 53px;
+    padding-left: 44px;
+    position: relative;
 
     &:hover {
         outline: 1px solid #00b2ff;
@@ -118,28 +118,28 @@
 @media (max-width: $desktop-width) {
     .services__wrapper {
         max-width: 767px;
-        margin: 0 auto;
     }
 
     .services__container {
-        @include margin-0-0;
+        max-width: 715px;
+        margin: 0 auto;
     }
 
     .services__container h2 {
         font-size: 32px;
-        margin-left: 37px;
+        margin-left: 0;
         margin-right: 25px;
     }
 
     .services__list {
-        margin-left: 17px;
         column-gap: 30px;
         justify-content: center;
+        flex-direction: column;
         overflow: hidden;
     }
 
     .services__list a {
-        max-width: 715px;
+        width: 100%;
         position: relative;
 
         &::before {
@@ -150,8 +150,13 @@
             opacity: 0.3;
             top: 0;
             left: 0;
-            width: 715px;
+            width: 100%;
             height: 256px;
+        }
+
+        &::after {
+            right: 0;
+            bottom: 0;
         }
     }
 
@@ -161,11 +166,6 @@
 
         padding-top: 46px;
         padding-left: 44px;
-
-        &::after {
-            right: 0;
-            bottom: 0;
-        }
     }
 
     .services__production-link {
@@ -191,14 +191,15 @@
 
 @media (max-width: $tablet-width) {
     .services__wrapper {
-        max-width: 320px;
+        max-width: 767px;
         margin: 0 auto;
         padding-top: 43px;
         padding-bottom: 64px;
     }
 
     .services__container {
-        @include margin-0-0;
+        max-width: 95%;
+        margin: 0 auto;
     }
 
     .services__container h2 {
@@ -206,7 +207,7 @@
         margin-top: 0;
         line-height: 43px;
         margin-bottom: 37px;
-        margin-left: 17px;
+        margin-left: 0;
     }
 
     .services__list {
@@ -214,7 +215,7 @@
     }
 
     .services__list a {
-        max-width: 290px;
+        width: 100%;
         position: relative;
 
         &::before {
@@ -225,7 +226,7 @@
             opacity: 0.3;
             top: 0;
             left: 0;
-            width: 290px;
+            width: 100%;
             height: 256px;
         }
     }
