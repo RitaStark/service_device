@@ -220,7 +220,7 @@
     }
 
     .intro__info {
-        padding-left: 88px;
+        padding-left: 68px;
         max-width: 393px;
     }
 
@@ -254,7 +254,7 @@
     }
 
     .intro__wrapper {
-        max-width: 320px;
+        max-width: 767px;
         margin-top: 62px;
         padding-bottom: 47px;
         display: flex;
@@ -262,7 +262,7 @@
     }
 
     .intro__container {
-        max-width: 302px;
+        max-width: 749px;
         padding-left: 18px;
     }
 
@@ -288,6 +288,8 @@
 
     .intro__info {
         padding-left: 0;
+
+        @include max-width-767;
     }
 
     .intro p {

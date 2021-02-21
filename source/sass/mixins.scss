@@ -24,3 +24,7 @@
     margin-right: 0;
     margin-left: 0;
 }
+
+@mixin max-width-767 {
+    max-width: 767px;
+}
