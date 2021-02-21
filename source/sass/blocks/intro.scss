@@ -74,6 +74,12 @@
     }
 }
 
+.intro__block a {
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
 .intro p {
     font-weight: 400;
     font-size: 22px;
