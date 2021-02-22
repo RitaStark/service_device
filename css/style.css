@@ -1790,9 +1790,6 @@ input[type="checkbox"] {
   margin-right: 0;
   z-index: 2; }
 
-.main-nav__nojs {
-  display: none; }
-
 .main-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;

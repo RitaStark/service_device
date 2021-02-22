@@ -8,7 +8,8 @@
   var contactForm = document.querySelector('.intro__form .pop-up');
   var body = document.querySelector('body');
 
-  callRequest.addEventListener('click', function () {
+  callRequest.addEventListener('click', function (event) {
+    event.preventDefault();
     overlay.classList.remove('visually-hidden');
     document.querySelector('.pop-up__input').focus();
     body.classList.add('no-scroll');
