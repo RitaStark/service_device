@@ -1082,10 +1082,7 @@ body {
     margin-left: 0;
     margin-right: 25px; }
   .services__list {
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1096,7 +1093,8 @@ body {
     overflow: hidden; }
   .services__list a {
     width: 100%;
-    position: relative; }
+    position: relative;
+    margin-bottom: 30px; }
     .services__list a::before {
       content: "";
       position: absolute;
@@ -1416,15 +1414,19 @@ input[type="checkbox"] {
   .question-form__card {
     margin: 0 auto;
     max-width: 767px; }
+  .question-form__item {
+    margin-bottom: 40px; }
   .question-form__client-data {
-    row-gap: 30px; }
+    row-gap: 0;
+    margin-bottom: 0; }
   .question-form__card h2 {
     font-size: 32px;
     padding-left: 3px; }
   .question-form__card p {
     padding-left: 5px; }
   .question-form__data {
-    margin: 0 auto; }
+    margin: 0 auto;
+    row-gap: 0; }
   .question-form__agreements label {
     padding-right: 0; }
   .question-form__agreements a {
@@ -1450,7 +1452,8 @@ input[type="checkbox"] {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    row-gap: 0; }
   .question-form__client-data {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1459,7 +1462,6 @@ input[type="checkbox"] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 30px;
     margin: 0 auto;
     max-width: 767px; }
   .question-form__ask {
@@ -1471,7 +1473,8 @@ input[type="checkbox"] {
   .question-form__input {
     width: 100%; }
   .question-form__item {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 40px; }
     .question-form__item input[type="text"],
     .question-form__item input[type="tel"] {
       width: 96%;
