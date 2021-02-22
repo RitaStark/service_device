@@ -1142,7 +1142,8 @@ body {
        -moz-column-gap: 30px;
             column-gap: 30px;
     row-gap: 30px;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-bottom: 30px; }
   .services__list a {
     width: 100%;
     position: relative; }
@@ -1785,6 +1786,9 @@ input[type="checkbox"] {
 .main-nav {
   margin-right: 0;
   z-index: 2; }
+
+.main-nav__nojs {
+  display: none; }
 
 .main-nav__list {
   display: -webkit-box;
