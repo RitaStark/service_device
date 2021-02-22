@@ -1471,7 +1471,7 @@ input[type="checkbox"] {
     margin: 0 auto;
     max-width: 767px; }
     .question-form__ask textarea {
-      width: 96%; }
+      width: 93%; }
   .question-form__input {
     width: 100%; }
   .question-form__item {
@@ -1479,7 +1479,7 @@ input[type="checkbox"] {
     margin-bottom: 40px; }
     .question-form__item input[type="text"],
     .question-form__item input[type="tel"] {
-      width: 96%;
+      width: 93%;
       font-size: 16px; }
   .question-form__agreements {
     -ms-flex-wrap: wrap;
