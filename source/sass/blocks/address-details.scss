@@ -31,6 +31,12 @@
     padding-bottom: 10px;
 }
 
+.address-details__item a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #1b2d37;
+}
+
 // tablet----------------------------------------------------------------------------
 
 @media (max-width: $desktop-width) {

@@ -1560,6 +1560,11 @@ input[type="checkbox"] {
 .address-details__item {
   padding-bottom: 10px; }
 
+.address-details__item a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #1b2d37; }
+
 @media (max-width: 1023px) {
   .address-details input {
     display: none; }
