@@ -877,7 +877,7 @@ body {
   .intro__advice {
     position: absolute;
     bottom: 0;
-    left: 134px;
+    left: 115px;
     padding: 0;
     min-width: 389px; }
   .intro__info {
@@ -1370,8 +1370,8 @@ body {
   background: url("../images/icon-tick.svg") no-repeat;
   background-position: center;
   background-size: 10px 10px;
-  left: -27px;
-  top: 11px; }
+  left: 9px;
+  top: 14px; }
 
 .question-form__check-mark + label::after {
   content: "";
@@ -1688,6 +1688,7 @@ input[type="checkbox"] {
   margin-bottom: 30px; }
 
 .pop-up label {
+  cursor: pointer;
   position: relative;
   color: #ffffff;
   font-size: 14px;
@@ -1700,7 +1701,7 @@ input[type="checkbox"] {
 
 .pop-up__submit {
   text-decoration: none;
-  background-color: #58c2f0;
+  background-color: #00b2ff;
   text-transform: uppercase;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -1760,8 +1761,16 @@ input[type="checkbox"] {
     background: url("../images/icon-close.svg") no-repeat;
     background-position: center;
     background-size: 17px 17px;
-    right: 1px;
-    top: 1px; }
+    right: -20px;
+    top: -20px;
+    padding: 20px; }
+
+.pop-up__agree-text {
+  margin-top: 0; }
+
+.pop-up__agree-text p {
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .main-nav {
   margin-right: 0;
