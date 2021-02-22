@@ -133,6 +133,7 @@
 
     .services__list {
         column-gap: 30px;
+        row-gap: 30px;
         justify-content: center;
         flex-direction: column;
         overflow: hidden;
@@ -211,6 +212,8 @@
     }
 
     .services__list {
+        column-gap: 30px;
+        row-gap: 30px;
         margin-left: 0;
     }
 
