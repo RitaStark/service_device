@@ -1233,7 +1233,7 @@ body {
     padding-left: 20px;
     padding-top: 20px;
     border: none;
-    border-radius: none; }
+    border-radius: unset; }
     .question-form__ask textarea::-webkit-input-placeholder {
       padding-left: 0;
       border: none; }
@@ -1260,7 +1260,7 @@ body {
     border: none;
     background-color: #58c2f0;
     padding-left: 20px;
-    border-radius: none; }
+    border-radius: unset; }
   .question-form__item label {
     display: none; }
 
