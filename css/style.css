@@ -442,7 +442,8 @@ body {
   .advantages__item:hover h2 {
     color: #ffffff; }
   .advantages__item:hover .advantages__icon {
-    fill: #ffffff; }
+    fill: #ffffff;
+    stroke: #ffffff; }
 
 .advantages__item-stopwatch,
 .advantages__item-hired,
