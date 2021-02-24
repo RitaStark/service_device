@@ -149,7 +149,7 @@ body {
 
 @media (max-width: 1023px) {
   .footer-cover {
-    padding-bottom: 17px; } }
+    padding-bottom: 15px; } }
 
 @media (max-width: 767px) {
   .footer-cover {
@@ -351,7 +351,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2); }
   .footer-info__lifetime {
     text-transform: uppercase;
@@ -740,15 +740,16 @@ body {
     max-width: 95%; }
   .about-company h2 {
     font-size: 30px;
-    margin-bottom: 23px; }
+    margin-bottom: 23px;
+    margin-top: 20px; }
   .about-company__desktop-text {
     display: none; }
   .about-company__par-first {
     margin-bottom: 21px; }
   .about-company__par-second {
-    padding-bottom: 56px; }
+    padding-bottom: 53px; }
   .about-company__button {
-    padding: 14px 41px 14px 48px; }
+    padding: 13px 41px 13px 48px; }
   .about-company__tablet-text {
     display: inline; }
   .about-company__info {
@@ -943,7 +944,7 @@ body {
 @media (max-width: 1023px) {
   .intro__wrapper {
     margin: 0 auto;
-    padding-bottom: 157px;
+    padding-bottom: 155px;
     overflow: hidden; }
   .intro__container {
     max-width: 718px;
@@ -1179,7 +1180,7 @@ body {
   .services__wrapper {
     max-width: 767px;
     padding-top: 47px;
-    padding-bottom: 35px; }
+    padding-bottom: 32px; }
   .services__container {
     max-width: 715px;
     margin: 0 auto; }
@@ -1518,7 +1519,7 @@ input[type="checkbox"] {
   .question-form__wrapper {
     max-width: 770px;
     margin: 0 auto;
-    padding: 77px 63px 75px 63px; }
+    padding: 75px 63px 76px 63px; }
   .question-form__container {
     padding-top: 0;
     margin-right: 0;
@@ -1529,10 +1530,9 @@ input[type="checkbox"] {
     margin: 0 auto;
     max-width: 767px; }
   .question-form__item {
-    margin-bottom: 40px; }
+    margin-bottom: 41px; }
   .question-form__client-data {
-    row-gap: 0;
-    margin-bottom: 3px; }
+    row-gap: 0; }
   .question-form__card h2 {
     font-size: 32px;
     padding-left: 25px;
@@ -1543,13 +1543,15 @@ input[type="checkbox"] {
     margin: 0 auto;
     width: 90%;
     row-gap: 0;
-    padding-top: 55px; }
+    padding-top: 53px; }
   .question-form__ask textarea {
     height: 138px; }
   .question-form__agreements label {
     padding-right: 0; }
   .question-form__agreements a {
     padding: 14px 4px 12px 69px; }
+  .question-form__agreements button {
+    padding: 14px 25px; }
   .question-form__right-triangle {
     display: none; } }
 
