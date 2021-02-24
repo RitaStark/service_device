@@ -446,7 +446,7 @@ body {
 
 .advantages__item-stopwatch,
 .advantages__item-hired,
-.advantages__item-derective,
+.advantages__item-detective,
 .advantages__item-tag {
   padding: 27px 42px 70px 44px; }
 
@@ -578,14 +578,14 @@ body {
     padding-top: 21px; }
   .advantages__item-hired h2 {
     padding-top: 0; }
-  .advantages__item-derective {
+  .advantages__item-detective {
     padding-top: 25px;
     margin-bottom: 0;
     padding-bottom: 0; }
-  .advantages__item-derective p {
+  .advantages__item-detective p {
     margin-bottom: 0;
     padding-bottom: 53px; }
-  .advantages__item-derective h2 {
+  .advantages__item-detective h2 {
     margin-bottom: 15px; }
   .advantages__item-tag {
     padding-top: 22px;
@@ -601,7 +601,7 @@ body {
     top: 862px; }
   .advantages-wrapper {
     max-width: 767px;
-    margin-top: 37px;
+    margin-top: 35px;
     overflow: hidden;
     padding-bottom: 0; }
   .advantages {
@@ -622,7 +622,7 @@ body {
   .advantages__item h2 {
     letter-spacing: -1.2px;
     font-size: 20px;
-    margin-top: 3px;
+    margin-top: 0;
     margin-bottom: 7px; }
   .advantages__item p {
     letter-spacing: 1.7px;
@@ -630,17 +630,21 @@ body {
     margin-top: 0;
     line-height: 22px;
     margin-bottom: 0;
-    font-size: 15px; }
+    font-size: 16px; }
   .advantages__item-stopwatch {
-    padding: 24px 14px 26px 26px; }
+    padding: 24px 14px 25px 26px; }
   .advantages__item-hired {
-    padding: 25px 14px 10px 26px; }
-  .advantages__item-derective {
-    padding: 25px 14px 3px 26px; }
-  .advantages__item-derective h2 {
+    padding: 21px 14px 10px 26px; }
+  .advantages__item-hired h2 {
+    margin-top: 6px;
+    margin-bottom: 3px; }
+  .advantages__item-detective {
+    padding: 21px 14px 5px 26px; }
+  .advantages__item-detective h2 {
+    margin-top: 5px;
     margin-bottom: 14px; }
   .advantages__item-tag {
-    padding: 24px 14px 45px 26px; }
+    padding: 24px 14px 23px 26px; }
   .advantages__item-tag h2 {
     margin-bottom: 15px; }
   .advantages__item-tag p {
@@ -781,9 +785,9 @@ body {
   .about-company__par-first {
     margin-bottom: 41px; }
   .about-company__par-second {
-    padding-bottom: 45px; }
+    padding-bottom: 42px; }
   .about-company__button {
-    padding: 13px 44px; }
+    padding: 14px 44px; }
   .about-company__year {
     display: none; }
   .about-company__info {
@@ -1229,7 +1233,7 @@ body {
     max-width: 767px;
     margin: 0 auto;
     padding-top: 49px;
-    padding-bottom: 23px; }
+    padding-bottom: 33px; }
   .services__container {
     max-width: 90%;
     margin: 0 auto; }
@@ -1591,7 +1595,7 @@ input[type="checkbox"] {
       width: 100%;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      height: 89px;
+      height: 106px;
       padding-left: 17px;
       padding-top: 13px;
       font-size: 17px; }
