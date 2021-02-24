@@ -1714,6 +1714,9 @@ input[type="checkbox"] {
 .address-details__item {
   padding-bottom: 10px; }
 
+.address-details__item a:hover {
+  opacity: 0.5; }
+
 .address-details__item a {
   list-style-type: none;
   text-decoration: none;
