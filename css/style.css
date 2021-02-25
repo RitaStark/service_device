@@ -365,7 +365,8 @@ body {
     padding-left: 18px; }
   .footer-info__lifetime {
     padding-bottom: 0;
-    padding-top: 10px; } }
+    padding-top: 10px;
+    margin-left: 16px; } }
 
 @media (max-width: 1023px) {
   .footer-address {
@@ -945,7 +946,7 @@ body {
     padding-top: 88px;
     padding-bottom: 25px; }
   .intro h1 {
-    max-width: 1023px;
+    max-width: 266px;
     font-size: 57px;
     font-style: normal;
     font-weight: 700;
@@ -993,7 +994,10 @@ body {
     top: -151px;
     left: -68px;
     width: 503px;
-    height: 527px; } }
+    height: 527px; }
+  .intro__img {
+    width: 465px;
+    height: 340px; } }
 
 @media (max-width: 767px) {
   .intro {
@@ -1750,7 +1754,7 @@ body {
   .address-details {
     position: relative;
     padding-top: 25px;
-    padding-bottom: 18px;
+    padding-bottom: 27px;
     width: 320px;
     margin: 0 auto; }
   .address-details__header {
