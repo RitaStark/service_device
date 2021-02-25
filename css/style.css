@@ -416,7 +416,7 @@ body {
   border: 1px solid #ebebeb;
   border-left: 1px solid #00b2ff;
   background-color: #ffffff;
-  width: 35%;
+  width: 36%;
   margin-bottom: 30px;
   font-family: "PT Mono", "Droid Sans Mono", monospace; }
   .advantages__item:hover {
@@ -430,10 +430,12 @@ body {
     stroke: #ffffff; }
 
 .advantages__item-stopwatch,
-.advantages__item-hired,
+.advantages__item-hired {
+  padding: 27px 42px 65px 44px; }
+
 .advantages__item-detective,
 .advantages__item-tag {
-  padding: 27px 42px 70px 44px; }
+  padding: 27px 42px 80px 44px; }
 
 .advantages__icon {
   fill: #00b2ff; }
@@ -451,7 +453,7 @@ body {
     height: 32px; }
 
 .advantages-wrapper {
-  padding-top: 117px;
+  padding-top: 112px;
   position: relative;
   overflow: hidden; }
 
@@ -463,8 +465,8 @@ body {
   .advantages__item-tag::after {
     content: "";
     position: absolute;
-    top: -56px;
-    left: 479px;
+    top: -50px;
+    left: 575px;
     width: 343px;
     height: 326px;
     background-image: url("../images/triangle-small-right.png");
@@ -475,8 +477,8 @@ body {
 
 .advantages__img-triangle-small {
   position: absolute;
-  top: -47px;
-  left: -203px;
+  top: -69px;
+  left: -190px;
   width: 343px;
   height: 326px;
   background-image: url("../images/triangle-small-advantages.svg");
@@ -501,8 +503,8 @@ body {
 
 .advantages__big-triangle-left {
   position: absolute;
-  top: 355px;
-  left: -321px;
+  top: 530px;
+  left: -188px;
   width: 723px;
   height: 700px;
   background-image: url("../images/left-triangle.png");
@@ -638,13 +640,13 @@ body {
 .about-company {
   max-width: 1314px;
   margin: 0 auto;
-  padding-bottom: 78px;
-  padding-top: 41px; }
+  padding-bottom: 124px;
+  padding-top: 49px; }
 
 .about-company__wrapper {
   padding-left: 183px;
   position: relative;
-  margin-right: 72px;
+  margin-right: 76px;
   margin-left: 72px; }
 
 .about-company__wrapper h2 {
@@ -653,10 +655,11 @@ body {
   font-size: 36px;
   line-height: 51px;
   color: #666666;
+  margin-bottom: 19px;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
 .about-company__wrapper p {
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
@@ -664,19 +667,22 @@ body {
   color: #666666;
   font-family: "PT Mono", "Droid Sans Mono", monospace; }
 
+.about-company__par-first {
+  margin-bottom: 21px; }
+
 .about-company__par-second {
   margin-bottom: 0;
-  padding-bottom: 43px; }
+  padding-bottom: 39px; }
 
 .about-company__button {
   text-decoration: none;
   text-transform: uppercase;
   color: #00b2ff;
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 700;
   border: 1px solid #00b2ff;
   border-radius: 5px;
-  padding: 11px 50px 11px 50px;
+  padding: 13px 51px;
   margin-top: 43px;
   cursor: auto;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
@@ -692,7 +698,7 @@ body {
   width: 113px;
   height: 328px;
   position: absolute;
-  top: 11px;
+  top: -3px;
   left: 5px; }
 
 .about-company__year {
@@ -704,7 +710,7 @@ body {
   background: #ffffff;
   mix-blend-mode: lighten;
   position: absolute;
-  top: 116px;
+  top: 101px;
   left: -105px;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
@@ -803,7 +809,7 @@ body {
 .intro__wrapper {
   max-width: 1555px;
   margin: 0 auto;
-  padding-bottom: 317px;
+  padding-bottom: 321px;
   position: relative; }
 
 .intro__picture {
@@ -817,7 +823,7 @@ body {
   background-image: url("../images/header-triangles.png");
   background-repeat: no-repeat;
   background-size: 670px 641px;
-  bottom: 0;
+  bottom: 19px;
   left: -43px;
   width: 670px;
   height: 641px;
@@ -827,9 +833,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
-  font-size: 73px;
+  font-size: 71px;
   line-height: 94px;
-  letter-spacing: 0.13em;
   text-align: left;
   font-style: normal;
   margin-bottom: 30px;
@@ -846,7 +851,7 @@ body {
     height: 2px;
     background-color: #ffffff;
     left: 0;
-    top: 17px; }
+    top: 14px; }
 
 .intro__block a:hover {
   opacity: 0.5; }
@@ -854,7 +859,7 @@ body {
 .intro p {
   font-weight: 400;
   font-size: 22px;
-  line-height: 34px;
+  line-height: 32px;
   font-style: normal;
   letter-spacing: 0.07em;
   text-align: left;
@@ -871,7 +876,7 @@ body {
   color: #ffffff;
   background-color: #00b2ff;
   text-decoration: none;
-  padding: 17px 58px;
+  padding: 17px 28px;
   border-radius: 5px;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
   .intro__button:hover {
@@ -883,9 +888,10 @@ body {
 .intro__scroll-down {
   position: absolute;
   left: -39px;
-  top: 290px;
+  top: 295px;
   color: #ffffff;
   font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -897,8 +903,8 @@ body {
 
 .intro__advice {
   position: absolute;
-  bottom: -24px;
-  left: 100px; }
+  bottom: -28px;
+  left: 93px; }
 
 .intro__overlay {
   position: fixed;
@@ -1265,7 +1271,8 @@ body {
 
 .question-form {
   background-color: #00b2ff;
-  overflow: hidden; }
+  overflow: hidden;
+  max-height: 669px; }
 
 .question-form__wrapper {
   max-width: 1314px;
@@ -1273,7 +1280,6 @@ body {
 
 .question-form__container {
   padding-top: 92px;
-  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1282,7 +1288,7 @@ body {
   margin-left: 72px; }
 
 .question-form__card h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: 51px;
@@ -1314,7 +1320,7 @@ body {
           justify-content: space-between;
   row-gap: 40px;
   padding-top: 49px;
-  width: 98%;
+  width: 100%;
   font-family: "PT Mono", "Droid Sans Mono", monospace; }
 
 .question-form__ask {
@@ -1322,14 +1328,16 @@ body {
       flex-basis: 100%; }
   .question-form__ask textarea {
     width: 100%;
-    height: 154px;
+    height: 157px;
     font-size: 16px;
     color: #ffffff;
     resize: vertical;
     padding-left: 20px;
     padding-top: 20px;
     border: none;
-    border-radius: 0; }
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     .question-form__ask textarea::-webkit-input-placeholder {
       padding-left: 0;
       border: none; }
@@ -1436,13 +1444,13 @@ body {
   width: 100%;
   position: relative;
   z-index: 1;
-  top: -87px;
-  left: -28px; }
+  top: -92px;
+  left: -24px; }
 
 .question-form__back-triangle {
   position: absolute;
   bottom: 25px;
-  left: -157px;
+  left: -175px;
   width: 670px;
   height: 641px;
   background-image: url("../images/triangles-ask-form.png");
@@ -1501,7 +1509,12 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 40px; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.question-form__client-data input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 @media (max-width: 1023px) {
   .question-form__wrapper {
@@ -2044,7 +2057,7 @@ body {
   border-radius: 5px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 14px 32px;
+  padding: 16px 22px;
   font-size: 14px;
   line-height: 16.41px;
   font-weight: 700;
