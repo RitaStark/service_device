@@ -1412,6 +1412,9 @@ body {
   color: #ffffff;
   width: 100%; }
 
+.question-form__agreements input {
+  display: none; }
+
 .question-form__agreements button {
   cursor: pointer;
   text-decoration: none;
@@ -1511,9 +1514,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 40px; }
-
-input[type="checkbox"] {
-  display: none; }
 
 @media (max-width: 1023px) {
   .question-form__wrapper {
@@ -1939,25 +1939,31 @@ input[type="checkbox"] {
 .pop-up input {
   padding: 17px 0 17px 27px; }
 
-.pop-up__check-mark:checked + label::before {
-  content: "";
+.pop-up__check-mark {
+  opacity: 0;
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: url("../images/icon-tick.svg") no-repeat;
-  background-position: center;
-  background-size: 10px 10px;
-  left: 5px;
-  top: 5px; }
-
-.pop-up__check-mark + label::after {
-  content: "";
-  position: absolute;
-  border: 1px solid #ffffff;
-  width: 16px;
-  height: 16px;
-  left: 0;
-  top: 5px; }
+  bottom: 50px;
+  left: -149px; }
+  .pop-up__check-mark:checked + label::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url("../images/icon-tick.svg") no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    left: 5px;
+    top: 9px; }
+  .pop-up__check-mark:focus + label::after {
+    outline: 2px solid #ffffff; }
+  .pop-up__check-mark + label::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #ffffff;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 5px; }
 
 .pop-up__close-icon {
   width: 20px;
