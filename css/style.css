@@ -1429,7 +1429,8 @@ body {
 
 .question-form__agree-text {
   margin-top: 7px;
-  padding-left: 27px; }
+  padding-left: 27px;
+  font-family: "PT Mono", "Droid Sans Mono", monospace; }
 
 .question-form__image {
   width: 100%;
