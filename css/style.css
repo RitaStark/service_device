@@ -32,7 +32,7 @@ body {
   z-index: 10; }
 
 .page-header__wrapper {
-  padding-top: 30px;
+  padding-top: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +213,7 @@ body {
   padding-left: 0;
   font-size: 15px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 16px;
   text-align: left;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
@@ -674,17 +674,17 @@ body {
 
 .about-company__par-second {
   margin-bottom: 0;
-  padding-bottom: 39px; }
+  padding-bottom: 72px; }
 
 .about-company__button {
   text-decoration: none;
   text-transform: uppercase;
   color: #00b2ff;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
   border: 1px solid #00b2ff;
   border-radius: 5px;
-  padding: 13px 51px;
+  padding: 13px 47px;
   margin-top: 43px;
   cursor: auto;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
@@ -807,7 +807,7 @@ body {
 
 .intro__container {
   margin: 0 72px;
-  padding-top: 281px;
+  padding-top: 282px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,7 +825,7 @@ body {
 .intro__picture {
   position: absolute;
   right: -45px;
-  top: 283px;
+  top: 287px;
   z-index: 0; }
 
 .intro__triangle-big {
@@ -843,11 +843,11 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
-  font-size: 71px;
+  font-size: 77px;
   line-height: 94px;
   text-align: left;
   font-style: normal;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
 .intro__block {
@@ -871,10 +871,9 @@ body {
   font-size: 22px;
   line-height: 32px;
   font-style: normal;
-  letter-spacing: 0.07em;
   text-align: left;
   color: #ffffff;
-  margin-bottom: 53px;
+  margin-bottom: 57px;
   font-family: "PT Mono", "Droid Sans Mono", monospace; }
 
 .intro__button {
@@ -1754,7 +1753,7 @@ body {
   padding-left: 0;
   font-size: 15px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 16px;
   text-align: left;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
@@ -2071,6 +2070,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0;
+  margin-bottom: 0;
   z-index: 1; }
 
 .main-nav__email {
