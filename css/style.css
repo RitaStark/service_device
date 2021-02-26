@@ -97,7 +97,8 @@ body {
 
 @media (max-width: 767px) {
   .footer-small {
-    display: block; } }
+    display: block;
+    margin-top: 32px; } }
 
 @media (max-width: 1023px) {
   .footer-big {
@@ -175,7 +176,6 @@ body {
 
 @media (max-width: 767px) {
   .footer-logo {
-    padding-left: 14px;
     margin-top: 27px; }
   .footer-logo__img {
     width: 216px;
@@ -279,7 +279,7 @@ body {
     margin-top: 0;
     padding-left: 0;
     padding-top: 29px;
-    padding-bottom: 29px;
+    padding-bottom: 27px;
     font-family: "Roboto Condensed", "Arial", sans-serif; }
   .footer-list__wrapper {
     display: none; }
@@ -365,8 +365,8 @@ body {
     padding-left: 18px; }
   .footer-info__lifetime {
     padding-bottom: 0;
-    padding-top: 10px;
-    margin-left: 16px; } }
+    margin-left: 0;
+    margin-top: 20px; } }
 
 @media (max-width: 1023px) {
   .footer-address {
@@ -590,7 +590,7 @@ body {
     top: 862px; }
   .advantages-wrapper {
     max-width: 767px;
-    margin-top: 35px;
+    margin-top: 37px;
     overflow: hidden;
     padding-bottom: 0; }
   .advantages {
@@ -611,8 +611,8 @@ body {
   .advantages__item h2 {
     letter-spacing: -1.2px;
     font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 7px; }
+    margin-top: 2px;
+    margin-bottom: 5px; }
   .advantages__item p {
     letter-spacing: 1.7px;
     color: #666666;
@@ -628,14 +628,15 @@ body {
     margin-top: 6px;
     margin-bottom: 3px; }
   .advantages__item-detective {
-    padding: 21px 14px 5px 26px; }
+    padding: 23px 14px 5px 26px; }
   .advantages__item-detective h2 {
     margin-top: 5px;
     margin-bottom: 14px; }
   .advantages__item-tag {
-    padding: 24px 14px 23px 26px; }
+    padding: 23px 14px 20px 26px; }
   .advantages__item-tag h2 {
-    margin-bottom: 15px; }
+    margin-bottom: 13px;
+    margin-top: 5px; }
   .advantages__item-tag p {
     letter-spacing: 0; } }
 
@@ -762,15 +763,18 @@ body {
     padding-bottom: 79px;
     margin: 0 auto;
     max-width: 767px; }
-  .about-company__wrapper h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 28px; }
   .about-company__wrapper {
     max-width: 90%;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0; }
+  .about-company__wrapper h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 28px; }
+  .about-company__wrapper p {
+    font-size: 17px;
+    margin-top: 15px; }
   .about-company__header {
     font-size: 28px;
     margin-left: 18px;
@@ -780,9 +784,9 @@ body {
   .about-company__par-first {
     margin-bottom: 41px; }
   .about-company__par-second {
-    padding-bottom: 42px; }
+    padding-bottom: 41px; }
   .about-company__button {
-    padding: 14px 44px; }
+    padding: 14px 51px; }
   .about-company__year {
     display: none; }
   .about-company__info {
@@ -1006,7 +1010,7 @@ body {
   .intro__wrapper {
     max-width: 767px;
     margin-top: 62px;
-    padding-bottom: 47px;
+    padding-bottom: 46px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1022,15 +1026,16 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 47px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0;
     text-align: left;
     position: relative;
     z-index: 10;
-    margin-top: 280px; }
+    margin-top: 278px;
+    margin-bottom: 25px; }
   .intro__block {
-    margin-bottom: 93px; }
+    margin-bottom: 95px; }
     .intro__block::before {
-      top: 13px; }
+      top: 16px; }
   .intro__info {
     padding-left: 0;
     max-width: 767px; }
@@ -1040,7 +1045,7 @@ body {
     margin-top: 0; }
   .intro__picture {
     position: absolute;
-    top: 175px;
+    top: 171px;
     right: -7px; }
   .intro__triangle-big {
     background-size: 517px 479px;
@@ -1063,13 +1068,13 @@ body {
     display: block;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 18.75px;
     text-align: center;
     color: #ffffff;
     background-color: #00b2ff;
     text-decoration: none;
-    padding: 17px 0;
+    padding: 18px 0 18px 9px;
     border-radius: 5px;
     max-width: 284px;
     font-family: "Roboto Condensed", "Arial", sans-serif; }
@@ -1568,6 +1573,8 @@ body {
     height: 14px; } }
 
 @media (max-width: 767px) {
+  .question-form {
+    padding-bottom: 32px; }
   .question-form__wrapper {
     margin: 0 auto;
     padding: 30px 15px 12px 15px;
@@ -1612,7 +1619,8 @@ body {
       height: 106px;
       padding-left: 17px;
       padding-top: 13px;
-      font-size: 17px; }
+      font-size: 17px;
+      margin-bottom: -5px; }
   .question-form__input {
     width: 100%; }
     .question-form__input::-webkit-input-placeholder {
@@ -1627,13 +1635,13 @@ body {
       padding-left: 0; }
   .question-form__item {
     width: 100%;
-    margin-bottom: 30px; }
+    margin-bottom: 32px; }
     .question-form__item input[type="text"],
     .question-form__item input[type="tel"] {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       width: 100%;
-      font-size: 16px;
+      font-size: 9px;
       padding-left: 18px; }
   .question-form__agreements {
     -ms-flex-wrap: wrap;
@@ -1663,7 +1671,7 @@ body {
     width: 15px;
     height: 15px;
     left: 0;
-    top: 30px; } }
+    top: 31px; } }
 
 .social-info__list {
   display: -webkit-box;
@@ -1768,7 +1776,8 @@ body {
     margin-left: 15px;
     line-height: 22px;
     padding-right: 50px;
-    margin-top: 33px; }
+    margin-top: 33px;
+    margin-bottom: 0; }
   .address-details__item {
     line-height: 24px;
     padding-bottom: 0; }
@@ -2134,6 +2143,8 @@ body {
     margin-right: 0; }
     .main-nav__tel a {
       padding: 5px 5px; }
+  .main-nav__list {
+    margin-top: -5px; }
   .main-nav__email {
     margin-right: 3rem; }
     .main-nav__email a {
@@ -2146,7 +2157,7 @@ body {
     height: 18px; }
   .main-nav__tel > a > img {
     position: relative;
-    left: 8px;
+    left: 20px;
     top: -10px;
     width: 23px;
     height: 23px; } }
