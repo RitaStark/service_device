@@ -2032,7 +2032,7 @@ body {
   z-index: 1; }
 
 .main-nav__email {
-  margin-right: 3rem;
+  margin-right: 4rem;
   color: #ffffff;
   position: relative;
   font-weight: 400;
@@ -2058,7 +2058,7 @@ body {
     display: block;
     padding-right: 169px;
     position: absolute;
-    right: 6px; }
+    right: 14px; }
 
 .main-nav__call {
   cursor: pointer;
