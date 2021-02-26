@@ -1442,14 +1442,13 @@ body {
 .question-form__agreements label {
   position: relative;
   cursor: pointer;
-  margin-left: 0; }
+  margin-left: 4%;
+  margin-top: 7px;
+  padding-left: 32px;
+  max-width: 240px;
+  font-family: "PT Mono", "Droid Sans Mono", monospace; }
   .question-form__agreements label:hover {
     opacity: 0.5; }
-
-.question-form__agree-text {
-  margin-top: 7px;
-  padding-left: 27px;
-  font-family: "PT Mono", "Droid Sans Mono", monospace; }
 
 .question-form__image {
   width: 100%;
@@ -1655,11 +1654,10 @@ body {
     display: block;
     width: 100%; }
   .question-form__agreements label {
-    padding-left: 7px;
+    padding-left: 39px;
     margin-left: 0;
     padding-top: 29px;
-    padding-right: 5px; }
-  .question-form__agree-text {
+    padding-right: 5px;
     margin-top: 0; }
   .question-form__check-mark:checked + label::before {
     left: 4px;
@@ -2012,13 +2010,14 @@ body {
     top: -20px;
     padding: 20px; }
 
-.pop-up__agree-text {
-  margin-top: 0; }
-
-.pop-up__agree-text p {
+.pop-up label {
+  margin-top: 0;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 19px; }
+  line-height: 19px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "PT Mono", "Droid Sans Mono", monospace; }
 
 .main-nav {
   margin-right: 0;
