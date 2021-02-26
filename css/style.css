@@ -215,7 +215,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0.07em;
   text-align: left;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
@@ -349,7 +348,7 @@ body {
     color: #1b2d37;
     opacity: 0.5;
     padding-bottom: 14px;
-    margin-left: -24px;
+    margin-left: 10px;
     margin-top: 5px;
     font-family: "PT Mono", "Droid Sans Mono", monospace; } }
 
@@ -732,16 +731,20 @@ body {
     margin-left: 18px;
     margin-right: 0;
     max-width: 95%; }
+  .about-company__wrapper p {
+    line-height: 21px;
+    font-size: 16px; }
   .about-company h2 {
     font-size: 30px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
     margin-top: 20px; }
   .about-company__desktop-text {
     display: none; }
   .about-company__par-first {
-    margin-bottom: 45px; }
+    margin-bottom: 24px; }
   .about-company__par-second {
-    padding-bottom: 53px; }
+    padding-bottom: 59px;
+    margin-top: 0; }
   .about-company__button {
     padding: 14px 53px 13px 48px;
     font-size: 12px; }
@@ -955,10 +958,9 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 70px;
-    letter-spacing: 0.07em;
     text-align: left;
     margin-left: -6px;
-    margin-top: 140px; }
+    margin-top: 143px; }
   .intro p {
     font-size: 18px;
     font-style: normal;
@@ -976,7 +978,7 @@ body {
   .intro__picture {
     position: absolute;
     right: -208px;
-    top: 153px; }
+    top: 156px; }
   .intro__advice {
     position: absolute;
     bottom: 0;
@@ -992,7 +994,9 @@ body {
     display: none; }
   .intro__button {
     min-width: 356px;
-    padding: 19px 15px; }
+    padding: 19px 15px;
+    font-size: 16px;
+    font-weight: 600; }
   .intro__triangle-big {
     background-size: 527px 503px;
     top: -151px;
@@ -1224,6 +1228,8 @@ body {
     .services__item:hover {
       outline-offset: -1px;
       outline: 1px solid #00b2ff; }
+  .services__accessories--first-par {
+    padding-top: 10px; }
   .services__production-link::before {
     background-image: url("../images/product1_tablet.png"); }
   .services__installation-link::before {
@@ -1531,7 +1537,7 @@ body {
 
 @media (max-width: 1023px) {
   .question-form {
-    padding-bottom: 27px; }
+    padding-bottom: 29px; }
   .question-form__wrapper {
     max-width: 770px;
     margin: 0 auto;
@@ -1546,7 +1552,17 @@ body {
     margin: 0 auto;
     max-width: 767px; }
   .question-form__item {
-    margin-bottom: 41px; }
+    margin-bottom: 38px; }
+  .question-form__item > input::-webkit-input-placeholder {
+    font-size: 17px; }
+  .question-form__item > input::-moz-placeholder {
+    font-size: 17px; }
+  .question-form__item > input:-ms-input-placeholder {
+    font-size: 17px; }
+  .question-form__item > input::-ms-input-placeholder {
+    font-size: 17px; }
+  .question-form__item > input::placeholder {
+    font-size: 17px; }
   .question-form__client-data {
     row-gap: 0; }
   .question-form__card h2 {
@@ -1557,11 +1573,22 @@ body {
     padding-left: 31px; }
   .question-form__data {
     margin: 0 auto;
-    width: 90%;
+    width: 92%;
     row-gap: 0;
-    padding-top: 53px; }
+    padding-top: 57px; }
   .question-form__ask textarea {
-    height: 166px; }
+    height: 166px;
+    font-size: 18px; }
+  .question-form__input::-webkit-input-placeholder {
+    font-size: 17px; }
+  .question-form__input::-moz-placeholder {
+    font-size: 17px; }
+  .question-form__input:-ms-input-placeholder {
+    font-size: 17px; }
+  .question-form__input::-ms-input-placeholder {
+    font-size: 17px; }
+  .question-form__input::placeholder {
+    font-size: 17px; }
   .question-form__agreements label {
     padding-right: 0; }
   .question-form__agreements a {
@@ -1572,7 +1599,12 @@ body {
     display: none; }
   .question-form__check-mark + label::after {
     width: 14px;
-    height: 14px; } }
+    height: 14px;
+    left: 5px;
+    top: 3px; }
+  .question-form__check-mark:checked + label::before {
+    top: 6px;
+    left: 8px; } }
 
 @media (max-width: 767px) {
   .question-form {
@@ -1724,7 +1756,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0.07em;
   text-align: left;
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
@@ -2211,7 +2242,10 @@ body {
     left: 323px;
     top: -448px; }
   .copyright-list__confident {
-    padding-left: 0; } }
+    margin-left: 3px;
+    padding: 0; }
+  .copyright-list__developer {
+    margin-right: -10px; } }
 
 @media (max-width: 767px) {
   .copyright-list__lifetime {
